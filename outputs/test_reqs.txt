@@ -1,0 +1,2 @@
+Network Policies,Ensure network policies are configured
+Logging,Ensure audit logging is enabled

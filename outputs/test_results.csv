@@ -1,0 +1,2 @@
+FilePath,Severity,Control name,Failed resources,All Resources,Compliance score
+test/path.yaml,High,Test Control,1,5,80
