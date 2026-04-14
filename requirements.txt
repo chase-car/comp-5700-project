@@ -1,0 +1,11 @@
+accelerate==1.13.0
+datasets==4.8.4
+evaluate==0.4.6
+huggingface_hub==1.8.0
+pandas==3.0.1
+PyMuPDF==1.27.2.2
+pyinstaller==6.19.0
+pytest==9.0.2
+PyYAML==6.0.3
+torch==2.11.0
+transformers==5.4.0
