@@ -1,0 +1,3 @@
+API Server Authentication,Disable anonymous authentication
+Network Policies,Restrict traffic between namespaces
+Logging,Enable audit logging

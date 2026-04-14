@@ -1,0 +1,9 @@
+element1:
+  name: API Server Authentication
+  requirements:
+    req1: Ensure strong authentication
+    req2: Disable anonymous authentication
+element2:
+  name: Network Policies
+  requirements:
+    req1: Restrict traffic between namespaces

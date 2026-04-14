@@ -1,0 +1,8 @@
+element1:
+  name: API Server Authentication
+  requirements:
+    req1: Ensure strong authentication
+element2:
+  name: Logging
+  requirements:
+    req1: Enable audit logging

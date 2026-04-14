@@ -1,1 +1,162 @@
-{}
+element1:
+  name: Ensure that local logging has been enabled on all systems and networking
+  requirements:
+    req1: Enable local logging on all systems and networking devices.
+    req10: Ensure data is encrypted
+    req11: Protect data from loss.
+    req12: Secure physical premises
+    req13: Ensure physical access control is in place.
+    req14: Monitor physical premises.
+    req15: Configure all security settings
+    req16: Review the configuration of all security settings.
+    req17: Monitor security events
+    req18: Real-time monitoring of security events
+    req19: Implement automated alerts.
+    req2: Verify local logging is enabled on all systems and networking devices.
+    req20: Analyze security logs.
+    req21: req1
+    req3: Ensure that all systems are secure
+    req4: Ensure that all systems are adequately protected
+    req5: Secure all systems and networking devices.
+    req6: Monitor network traffic
+    req7: Ensure network devices are properly configured
+    req8: Monitor network traffic.
+    req9: Protect data from unauthorized access
+element10:
+  name: Ensure that these namespaces are the ones you need and are adequately administered
+  requirements:
+    req1: Ensure that the namespaces are correct
+    req10: 'Remediation: Follow documentation and create deployment'
+    req11: The objects are identified and managed
+    req12: The objects are the ones you need
+    req13: Create objects
+    req14: Maintain objects
+    req15: 'Remediation: Follow documentation and create objects'
+    req16: Follow the documentation to create objects
+    req17: The monitoring is required
+    req18: The monitoring is important
+    req19: Ensure that monitoring is properly configured
+    req2: Administer namespaces
+    req20: Maintain monitoring
+    req21: 'Remediation: Follow documentation and create monitoring'
+    req22: The operational requirements are defined
+    req23: The operational
+    req3: Create namespaces
+    req4: Maintain namespaces
+    req5: 'Remediation: Follow documentation and create namespaces'
+    req6: The deployment must be in the correct state
+    req7: The deployment must be configured for deployment
+    req8: Ensure that the deployment is correctly deployed
+    req9: Maintain the deployment
+element2:
+  name: Ensure that if the kubelet refers to a configuration file with the --config
+    argument, that
+  requirements:
+    req1: 644 or more restrictive
+    req10: The kubelet configuration file will be subject to checks for vulnerabilities
+    req11: A vulnerability scan will be performed on the kubelet configuration
+    req12: The kubelet requires to be configured to limit access to sensitive data.
+    req13: The configuration file should be located in the same directory as the kubelet
+      executable.
+    req14: The configuration file should be readable by the user running the kubelet.
+    req2: Specify file permissions
+    req3: The kubelet will consult the config file for security settings.
+    req4: The kubelet refers to a configuration file with the --config argument.
+    req5: The kubelet will read the config file.
+    req6: The kubelet will respect the permissions set for the config file.
+    req7: The kubelet will have permissions of 644 or more restrictive
+    req8: The kubelet must adhere to security best practices
+    req9: Security requirements are defined within the config file
+element3:
+  name: Ensure that only network ports, protocols, and services listening on a system
+  requirements:
+    req1: Validated business needs must be specified for each system
+    req10: System administration
+    req11: Security vulnerability
+    req12: Audit and verification
+    req2: The system must listen on network ports, protocols, and services
+    req3: These elements must be validated
+    req4: Network ports, protocols, and services must be verified.
+    req5: System security policy
+    req6: system security policy
+    req7: The system must be validated
+    req8: System security assessment
+    req9: System configuration
+element4:
+  name: Ensure that /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does
+    not
+  requirements:
+    req1: Prevent setting --make-iptables-util-chains
+    req2: Ensure /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does not
+      set --make-iptables-util-chains
+    req3: Ensure /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does
+element5:
+  name: Ensure that all users with administrative account access use a dedicated or
+  requirements:
+    req1: Users with administrative account access must use a dedicated or secondary
+      account for administrative activities.
+    req2: The dedicated or secondary account should only be used for administrative
+      activities.
+    req3: The dedicated or secondary account should not be used for internet browsing,
+      email, or similar activities.
+element6:
+  name: Avoiding mounting these tokens removes this attack avenue.
+  requirements:
+    req1: Ensure pods are authenticated with service account tokens.
+    req10: Protect API endpoints from unauthorized access.
+    req11: Implement rate limiting for API calls.
+    req12: Audit API request logs.
+    req13: Prevent escalation attacks where an attacker is able to compromise a single
+      pod in the cluster.
+    req14: req
+    req2: Implement a mechanism to prevent pods from mounting tokens without service
+      account tokens.
+    req3: Validate the service account token format.
+    req4: Provide an unauthenticated principal access to the resource.
+    req5: Implement container isolation.
+    req6: Secure container images.
+    req7: Examine container runtime configurations.
+    req8: Detect and respond to container runtime issues.
+    req9: Verify API endpoint security.
+element7:
+  name: Ensure that allowedCapabilities is not present in PSPs for the cluster unless
+    it is set
+  requirements:
+    req1: PSPs may not have AllowedCapabilities defined.
+    req10: PSPs configuration requires the setting of allowedCapabilities.
+    req11: This requires the PSPs to be set to allow all capabilities.
+    req12: req
+    req2: If AllowedCapabilities is defined, it must be an empty array.
+    req3: By default, PodSecurityPolicies are not defined.
+    req4: Default values are not applicable.
+    req5: Ensure that allowedCapabilities is not present in PSPs for the cluster unless
+      it is set to an empty array.
+    req6: This requires the PSPs to be configured to allow all capabilities.
+    req7: The PSPs may not have AllowedCapabilities defined.
+    req8: PodSecurityPolicies are not defined.
+    req9: The PSPs need to be added to the cluster.
+element8:
+  name: Ensure that each namespace defined in the cluster has at least one Network
+    Policy.
+  requirements:
+    req1: Each namespace must have at least one Network Policy.
+    req2: Create NetworkPolicy objects as needed.
+element9:
+  name: Minimize the use of environment variable secrets.
+  requirements:
+    req1: Use environment variable secrets instead of data volumes.
+    req10: Ensure secret values are not manipulated.
+    req11: Audit secret changes.
+    req12: Properly manage secrets throughout the entire lifecycle.
+    req13: Validate input to prevent malicious data.
+    req14: Protect secrets from unauthorized access.
+    req15: Enforce access control policies on secrets.
+    req16: Monitor secret usage for suspicious activity.
+    req2: Avoid the use of environment variables for secrets.
+    req3: Use secrets as data volumes or as environment variables.
+    req4: Avoid direct access to secrets.
+    req5: Store secrets securely (e.g., using a secrets management system).
+    req6: Validate secrets before using them.
+    req7: Rotate secrets regularly.
+    req8: The data volume or environment variable should be consistent.
+    req9: Implement mechanisms for data recovery in case of failure.

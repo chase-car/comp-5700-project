@@ -115,30 +115,83 @@ def extract_kdes(text, prompt, prompt_type, doc_name):
     model_name = "google/gemma-3-1b-it"
     
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float32)
+    model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float32)
 
-    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048)
-    outputs = model.generate(**inputs, max_new_tokens=1024)
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    # Build nested dictionary from response
-    kdes = {}
-    lines = response.split("\n")
-    current_element = None
-    element_count = 0
-
-    for line in lines:
+    # Extract only relevant chunks from the document
+    relevant_lines = []
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
         line = line.strip()
-        if line.lower().startswith("name:"):
-            element_count += 1
-            current_element = f"element{element_count}"
-            kdes[current_element] = {
-                "name": line.replace("name:", "").strip(),
-                "requirements": {}
-            }
-        elif line.lower().startswith("- req") and current_element:
-            req_key = f"req{len(kdes[current_element]['requirements']) + 1}"
-            kdes[current_element]["requirements"][req_key] = line.lstrip("- ").strip()
+        if any(line.startswith(kw) for kw in ["Ensure", "Minimize", "Avoid", "Prefer"]):
+            # Grab the line and a few lines around it for context
+            start = max(0, i-1)
+            end = min(len(lines), i+4)
+            chunk = "\n".join(lines[start:end])
+            relevant_lines.append(chunk)
+
+    # Build KDEs from chunks
+    kdes = {}
+    seen_names = set()
+    element_count = 0
+    for i, chunk in enumerate(relevant_lines):
+        if element_count >= 10:
+            break
+        element_key = f"element{i+1}"
+
+        short_prompt = f"""Extract the security requirement from this text and list any sub-requirements.
+Format your response exactly like this:
+name: <name of requirement>
+- req1: <first requirement>
+- req2: <second requirement>
+
+Text:
+{chunk}
+
+Response:
+name:"""
+
+        inputs = tokenizer(short_prompt, return_tensors="pt", truncation=True, max_length=512)
+        outputs = model.generate(**inputs, max_new_tokens=256)
+        response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        # Parse name - use the chunk's first meaningful line
+        name = ""
+        for chunk_line in chunk.split("\n"):
+            chunk_line = chunk_line.strip()
+            if any(chunk_line.startswith(kw) for kw in ["Ensure", "Minimize", "Avoid", "Prefer"]):
+                name = chunk_line.split("(")[0].strip()
+                break
+        
+        if not name or name in seen_names:
+            continue  # Skip elements with no valid name or duplicates
+        seen_names.add(name)
+        element_count += 1
+
+        # Parse requirements
+        requirements = {}
+        req_count = 1
+        seen_reqs = set()
+
+        for line in response.split("\n"):
+            line = line.strip()
+            # Skip placeholders and empty lines
+            if not line or "<" in line:
+                continue
+            # Remove req1:, req2: prefixes if present
+            if line.startswith("-"):
+                req_val = line.lstrip("- ").strip()
+                # Remove any reqN: prefix inside the value
+                if req_val.startswith("req") and ":" in req_val:
+                    req_val = req_val.split(":", 1)[1].strip()
+                if req_val and req_val not in seen_reqs:
+                    seen_reqs.add(req_val)
+                    requirements[f"req{req_count}"] = req_val
+                    req_count += 1
+
+        kdes[f"element{element_count}"] = {
+            "name": name,
+            "requirements": requirements
+        }
 
     # Save to YAML file
     yaml_filename = f"outputs/{doc_name}-kdes.yaml"
