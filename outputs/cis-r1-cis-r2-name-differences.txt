@@ -1,0 +1,2 @@
+Ensure that audit logs are collected and managed in accordance with the enterprise’s
+Ensure that only network ports, protocols, and services listening on a system

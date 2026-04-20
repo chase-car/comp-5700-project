@@ -134,7 +134,7 @@ def extract_kdes(text, prompt, prompt_type, doc_name):
     seen_names = set()
     element_count = 0
     for i, chunk in enumerate(relevant_lines):
-        if element_count >= 10:
+        if element_count >= 3:
             break
         element_key = f"element{i+1}"
 
@@ -204,7 +204,7 @@ def save_llm_output(llm_name, prompt, prompt_type, llm_output, output_filename):
     """
     Collects LLM output and saves it to a TEXT file in a formatted way.
     """
-    with open(f"outputs/{output_filename}", "a") as f:
+    with open(f"outputs/{output_filename}", "a", encoding="utf-8") as f:
         f.write(f"*LLM Name*\n")
         f.write(f"{llm_name}\n\n")
         f.write(f"*Prompt Used*\n")

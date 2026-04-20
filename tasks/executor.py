@@ -45,20 +45,20 @@ def determine_controls(text1, text2, output_filename):
     # Kubescape controls mapping
     kubescape_controls = {
         "authentication": ["C-0013", "C-0015", "C-0017"],
-        "authorization": ["C-0014", "C-0016"],
-        "network": ["C-0035", "C-0043", "C-0044"],
-        "logging": ["C-0026", "C-0024"],
+        "authorization": ["C-0016", "C-0035"],
+        "network": ["C-0030", "C-0041", "C-0044"],
+        "logging": ["C-0026"],
         "secrets": ["C-0012", "C-0034"],
-        "rbac": ["C-0031", "C-0036", "C-0037", "C-0038"],
-        "pod": ["C-0016", "C-0018", "C-0019", "C-0020"],
-        "container": ["C-0002", "C-0009", "C-0010"],
-        "kubelet": ["C-0030", "C-0041"],
-        "namespace": ["C-0052", "C-0053"],
-        "image": ["C-0006", "C-0007"],
-        "access": ["C-0031", "C-0032", "C-0033"],
-        "privilege": ["C-0057", "C-0058"],
-        "encryption": ["C-0066", "C-0067"],
-        "audit": ["C-0067", "C-0024"],
+        "rbac": ["C-0035", "C-0036", "C-0037"],
+        "pod": ["C-0016", "C-0038", "C-0046"],
+        "container": ["C-0002", "C-0013", "C-0017"],
+        "kubelet": ["C-0041", "C-0044"],
+        "namespace": ["C-0052"],
+        "image": ["C-0001"],
+        "access": ["C-0035", "C-0034"],
+        "privilege": ["C-0016", "C-0046"],
+        "encryption": ["C-0012"],
+        "audit": ["C-0026"],
     }
 
     controls = set()
@@ -119,21 +119,27 @@ def execute_kubescape(controls_filepath, yamls_zip):
 
         rows = []
         for result in results.get("results", []):
+            resource_id = result.get("resourceID", "")
             for control in result.get("controls", []):
-                rows.append({
-                    "FilePath": result.get("name", ""),
-                    "Severity": control.get("severity", {}).get("severity", ""),
-                    "Control name": control.get("name", ""),
-                    "Failed resources": control.get("summary", {}).get("failedResources", 0),
-                    "All Resources": control.get("summary", {}).get("allResources", 0),
-                    "Compliance score": control.get("summary", {}).get("complianceScore", 0)
-                })
+                status = control.get("status", {}).get("status", "")
+                if status == "failed":
+                    rows.append({
+                        "FilePath": resource_id,
+                        "Severity": control.get("severity", ""),
+                        "Control name": control.get("name", ""),
+                        "Failed resources": 1,
+                        "All Resources": 1,
+                        "Compliance score": 0
+                    })
 
-        df = pd.DataFrame(rows)
+        # Deduplicate
+        df = pd.DataFrame(rows).drop_duplicates() if rows else pd.DataFrame(
+            columns=["FilePath", "Severity", "Control name",
+                     "Failed resources", "All Resources", "Compliance score"])
 
     except Exception as e:
         print(f"Error parsing results: {e}")
-        df = pd.DataFrame(columns=["FilePath", "Severity", "Control name", 
+        df = pd.DataFrame(columns=["FilePath", "Severity", "Control name",
                                     "Failed resources", "All Resources", "Compliance score"])
 
     return df

@@ -1,0 +1,35 @@
+element1:
+  name: Ensure that local logging has been enabled on all systems and networking
+  requirements:
+    req1: Enable local logging on all systems
+    req2: All systems
+    req3: Network devices should be secured
+    req4: All network devices
+    req5: Remote access is restricted
+    req6: Data security needs to be implemented
+    req7: Monitoring and auditing are required
+    req8: All systems should be protected
+    req9: Incident response is required
+element2:
+  name: "Ensure that audit logs are collected and managed in accordance with the enterprise\u2019\
+    s"
+  requirements:
+    req1: Collect and manage audit logs in accordance with the enterprise's audit
+      log management process
+    req10: audit logs
+    req2: Across all Kubernetes components
+    req3: "Ensure that audit logs are collected and managed in accordance with the\
+      \ enterprise\u2019s audit log management process."
+    req4: Kubernetes components
+    req5: across all Kubernetes components
+    req6: "Enterprise\u2019s audit log management process"
+    req7: Audit log management
+    req8: "consistent with the enterprise\u2019s audit log management process"
+    req9: Collect and manage
+element3:
+  name: Ensure that if the kubelet refers to a configuration file with the --config
+    argument, that
+  requirements:
+    req1: 644 or more restrictive
+    req2: File permissions are checked to ensure they comply with the configuration
+      file's permissions.

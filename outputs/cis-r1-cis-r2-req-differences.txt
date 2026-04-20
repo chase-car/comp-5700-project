@@ -1,0 +1,37 @@
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,audit logs
+Ensure that local logging has been enabled on all systems and networking,all network devices
+Ensure that local logging has been enabled on all systems and networking,All systems
+Ensure that local logging has been enabled on all systems and networking,Network devices should be secured
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Across all Kubernetes components
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,consistent with the enterprise’s audit log management process
+Ensure that local logging has been enabled on all systems and networking,All network devices
+Ensure that local logging has been enabled on all systems and networking,on all network devices
+Ensure that local logging has been enabled on all systems and networking,Network devices have been configured
+Ensure that local logging has been enabled on all systems and networking,Reporting can be automated
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Audit log management
+Ensure that local logging has been enabled on all systems and networking,Alerting mechanisms have been
+Ensure that only network ports, protocols, and services listening on a system,Run only valid network ports, protocols, and services.
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,across all Kubernetes components
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Kubernetes components
+Ensure that local logging has been enabled on all systems and networking,security measures have been implemented
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Enterprise’s audit log management process
+Ensure that only network ports, protocols, and services listening on a system,Verify network ports and protocols.
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,File permissions are checked to ensure they comply with the configuration file's permissions.
+Ensure that local logging has been enabled on all systems and networking,data storage has been completed
+Ensure that local logging has been enabled on all systems and networking,Security measures have been implemented
+Ensure that local logging has been enabled on all systems and networking,Data security needs to be implemented
+Ensure that local logging has been enabled on all systems and networking,Incident response is required
+Ensure that only network ports, protocols, and services listening on a system,Validate business needs.
+Ensure that local logging has been enabled on all systems and networking,On all systems
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,(None)
+Ensure that local logging has been enabled on all systems and networking,all systems
+Ensure that local logging has been enabled on all systems and networking,all security measures have been implemented
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Collect and manage audit logs in accordance with the enterprise's audit log management process
+Ensure that local logging has been enabled on all systems and networking,Data storage has been completed
+Ensure that local logging has been enabled on all systems and networking,reporting is automated
+Ensure that local logging has been enabled on all systems and networking,Monitoring and auditing are required
+Ensure that local logging has been enabled on all systems and networking,Remote access is restricted
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Collect and manage
+Ensure that local logging has been enabled on all systems and networking,All systems should be protected
+Ensure that local logging has been enabled on all systems and networking,Network devices are to be configured
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that audit logs are collected and managed in accordance with the enterprise’s audit log management process.

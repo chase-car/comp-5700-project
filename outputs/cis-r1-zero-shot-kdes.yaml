@@ -1,110 +1,30 @@
 element1:
   name: Ensure that local logging has been enabled on all systems and networking
   requirements:
-    req1: Enable local logging on all systems and networking devices.
-    req2: Verify that local logging is enabled on all systems and networking devices.
-element10:
-  name: Ensure that these namespaces are the ones you need and are adequately administered
-  requirements:
-    req1: Verify the names of required namespaces.
-    req2: Create namespaces for objects in deployment as per documentation.
+    req1: Enable local logging on all systems
+    req10: all security measures have been implemented
+    req11: Reporting can be automated
+    req12: reporting is automated
+    req13: Data storage has been completed
+    req14: data storage has been completed
+    req15: Alerting mechanisms have been
+    req2: On all systems
+    req3: all systems
+    req4: Network devices are to be configured
+    req5: Network devices have been configured
+    req6: all network devices
+    req7: on all network devices
+    req8: Security measures have been implemented
+    req9: security measures have been implemented
 element2:
   name: Ensure that if the kubelet refers to a configuration file with the --config
     argument, that
   requirements:
     req1: 644 or more restrictive
-    req10: Access to the config file with the --config argument must be restricted
-      to the kubelet.
-    req11: The kubelet should have permissions to read the config file
-    req2: The kubelet will read a config file with --config argument.
-    req3: The kubelet should read the config file with --config argument
-    req4: The kubelet will refer to a config file with the --config argument
-    req5: The kubelet will access the config file with the --config argument
-    req6: Access to the config file with the --config argument must be restricted
-      to the kubelet
-    req7: The kubelet should have permissions to read the config file with --config
-      argument.
-    req8: Ensure that if the kubelet refers to a configuration file with the --config
-      argument, that file has permissions of 644 or more restrictive.
-    req9: The kubelet will access the config file with the --config argument.
+    req2: (None)
 element3:
   name: Ensure that only network ports, protocols, and services listening on a system
   requirements:
-    req1: Validate network ports
-    req2: Validate network protocols
-    req3: Validate network services
-    req4: Verify that validated business needs are used in each system.
-element4:
-  name: Ensure that /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does
-    not
-  requirements:
-    req1: Configure /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf to
-      disable the --make-iptables-util-chains argument.
-    req2: Validate the configuration of /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf
-      to ensure that
-    req3: 'Use the remediation method 2: disable the --make-iptables-util-chains argument
-      in the /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf file.'
-    req4: Examine the configuration of /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf
-      to verify that
-    req5: Verify that the
-element5:
-  name: Ensure that all users with administrative account access use a dedicated or
-  requirements:
-    req1: Administrative user access requires a dedicated or secondary account for
-      elevated activities.
-    req2: The dedicated or secondary account should only be used for administrative
-      activities.
-    req3: The account should not be used for internet browsing, email, or similar
-      activities.
-element6:
-  name: Avoiding mounting these tokens removes this attack avenue.
-  requirements:
-    req1: Pods must be secured against escalation attacks by preventing the compromise
-      of a single pod in the cluster.
-    req10: Service account token validation should be implemented
-    req11: req
-    req2: Avoid mounting tokens that enable the attacker to compromise single pods.
-    req3: (implied)  The API server needs to be protected from attack by removing
-      the ability of unauthenticated principals to access it.
-    req4: API access bypasses should be prevented
-    req5: The API server must maintain a consistent policy for service account token
-      validation.
-    req6: (implied)  The API server must be protected from attack by removing the
-      ability of unauthenticated principals to access it.
-    req7: Service account tokens must be securely managed
-    req8: (impled)  The API server should be protected from attack by removing the
-      ability of unauthenticated principals to access it.
-    req9: (implied)  Authentication and authorization mechanisms must be implemented.
-element7:
-  name: Ensure that allowedCapabilities is not present in PSPs for the cluster unless
-    it is set
-  requirements:
-    req1: PSPs must not have AllowedCapabilities in the cluster.
-    req2: Only if AllowedCapabilities is set to an empty array.
-    req3: This requirement is essential for ensuring the cluster's security.
-    req4: PodSecurityPolicies are not defined.
-    req5: By default, PodSecurityPolicies are not defined.
-element8:
-  name: Ensure that each namespace defined in the cluster has at least one Network
-    Policy.
-  requirements:
-    req1: Create NetworkPolicy objects as you need them.
-    req2: Follow the documentation and create NetworkPolicy objects as you need them.
-element9:
-  name: Minimize the use of environment variable secrets.
-  requirements:
-    req1: Avoid using environment variable secrets for sensitive data.
-    req10: Implement traffic shaping
-    req11: Ensure high availability of the application
-    req12: Maintain a disaster recovery plan
-    req13: Monitor and alert on application performance
-    req14: Implement failover to secondary load balancer in case of failure
-    req15: Verify that the load
-    req2: Consider using data volumes for sensitive data.
-    req3: Ensure that load balancing algorithms perform effectively
-    req4: Perform health checks on all load balancer instances.
-    req5: Monitor load balancer health and metrics
-    req6: Configure load balancing rules to match application requirements
-    req7: Implement canary deployments
-    req8: Maintain a database of load balancer configurations
-    req9: Optimize load balancer for performance
+    req1: Verify network ports and protocols.
+    req2: Validate business needs.
+    req3: Run only valid network ports, protocols, and services.

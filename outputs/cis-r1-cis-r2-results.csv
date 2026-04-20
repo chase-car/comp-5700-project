@@ -1,0 +1,530 @@
+FilePath,Severity,Control name,Failed resources,All Resources,Compliance score
+path=3521134859/api=apps/v1/litmus/Deployment/chaos-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=1067973950/api=apps/v1/kuma-system/StatefulSet/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=4185596193/api=apps/v1/istio-system/Deployment/jaeger,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2504249075/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=905549350/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=3810630766/api=apps/v1/shifu-crd-system/Deployment/shifu-crd-controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2846413660/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1676893143/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=311974693/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1559752544/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1444832197/api=/v1/kadalu/ServiceAccount/kadalu-operator,Medium,Automatic mapping of service account,1,1,0
+path=3456769107/api=apps/v1/monitoring/Deployment/kube-state-metrics,Medium,Ingress and Egress blocked,1,1,0
+path=1644855195/api=/v1/argocd/ServiceAccount/argocd-redis-ha-haproxy,Medium,Automatic mapping of service account,1,1,0
+path=2692590440/api=apps/v1//DaemonSet/longhorn-iscsi-selinux-workaround,Medium,Ingress and Egress blocked,1,1,0
+path=361592414/api=/v1/monitoring/ServiceAccount/alertmanager-main,Medium,Automatic mapping of service account,1,1,0
+path=3115738610/api=/v1/kube-system/ServiceAccount/calico-node,Medium,Automatic mapping of service account,1,1,0
+path=1219920068/api=apps/v1/monitoring/Deployment/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=1219920068/api=apps/v1/monitoring/Deployment/grafana,Medium,Automatic mapping of service account,1,1,0
+path=2200991835/api=apps/v1/flux-system/Deployment/credentials-sync-eventhub,Medium,Ingress and Egress blocked,1,1,0
+path=1685157848/api=/v1/monitoring/ServiceAccount/kube-state-metrics,Medium,Automatic mapping of service account,1,1,0
+path=1132277500/api=apps/v1/infra/Deployment/test-receiver,Medium,Ingress and Egress blocked,1,1,0
+path=3990710646/api=apps/v1//Deployment/prometheus-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3456670068/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1564557684/api=apps/v1//StatefulSet/argocd-application-controller,Medium,Ingress and Egress blocked,1,1,0
+path=249101787/api=apps/v1//Deployment/tcp-echo-v2,Medium,Ingress and Egress blocked,1,1,0
+path=2544526982/api=/v1/webapp/ServiceAccount/reconciler,Medium,Automatic mapping of service account,1,1,0
+path=3726197975/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=403928253/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=4045334400/api=apps/v1//Deployment/podinfo,Medium,Ingress and Egress blocked,1,1,0
+path=2820491893/api=apps/v1//Deployment/opentelemetry-collector,Medium,Ingress and Egress blocked,1,1,0
+path=405840558/api=/v1//ServiceAccount/litmus-namespace-scope,Medium,Automatic mapping of service account,1,1,0
+path=3572087159/api=apps/v1/flux-system/Deployment/credentials-sync-eventhub,Medium,Ingress and Egress blocked,1,1,0
+path=3192694997/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1771689082/api=apps/v1//Deployment/kuberay-apiserver,Medium,Ingress and Egress blocked,1,1,0
+path=87062017/api=apps/v1/sock-shop/Deployment/shipping,Medium,Ingress and Egress blocked,1,1,0
+path=2135088972/api=apps/v1//Deployment/worker,Medium,Ingress and Egress blocked,1,1,0
+path=3139689310/api=apps/v1/kube-system/DaemonSet/csi-secrets-store,Medium,Ingress and Egress blocked,1,1,0
+path=95506668/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3010741840/api=apps/v1//Deployment/mongodb-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3156466929/api=apps/v1/kube-system/Deployment/debug-driver,Medium,Ingress and Egress blocked,1,1,0
+path=3070329773/api=/v1/spire/ServiceAccount/spire-agent,Medium,Automatic mapping of service account,1,1,0
+path=3082011532/api=/v1/longhorn-system/ServiceAccount/longhorn-uninstall-service-account,Medium,Automatic mapping of service account,1,1,0
+path=497429383/api=apps/v1/default/Deployment/nacos-operator,Medium,Ingress and Egress blocked,1,1,0
+path=497429383/api=apps/v1/default/Deployment/nacos-operator,Medium,Automatic mapping of service account,1,1,0
+path=922023995/api=apps/v1/kube-system/Deployment/seldon-spartakus-volunteer,Medium,Ingress and Egress blocked,1,1,0
+path=4035686336/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-ops-manager,Medium,Automatic mapping of service account,1,1,0
+path=4045729302/api=apps/v1/default/Deployment/grafana-operator-controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=4045729302/api=apps/v1/default/Deployment/grafana-operator-controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=1966492316/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1258712387/api=apps/v1/litmus/Deployment/litmusportal-auth-server,Medium,Ingress and Egress blocked,1,1,0
+path=39575612/api=apps/v1//Deployment/helloworld-v1,Medium,Ingress and Egress blocked,1,1,0
+path=2076921095/api=apps/v1/default/StatefulSet/nacos,Medium,Ingress and Egress blocked,1,1,0
+path=3310591910/api=apps/v1//Deployment/opentelemetry-collector,Medium,Ingress and Egress blocked,1,1,0
+path=3017647848/api=/v1/kubeeye-system/ServiceAccount/kubehunter,Medium,Automatic mapping of service account,1,1,0
+path=1218967779/api=/v1/monitoring/ServiceAccount/grafana,Medium,Automatic mapping of service account,1,1,0
+path=4270257528/api=apps/v1/argocd/Deployment/argocd-redis-ha-haproxy,Medium,Ingress and Egress blocked,1,1,0
+path=4270257528/api=apps/v1/argocd/Deployment/argocd-redis-ha-haproxy,Medium,Automatic mapping of service account,1,1,0
+path=2292752326/api=apps/v1//Deployment/reviews-v2,Medium,Ingress and Egress blocked,1,1,0
+path=3829859218/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2413197280/api=/v1/kadalu/ServiceAccount/kadalu-csi-nodeplugin,Medium,Automatic mapping of service account,1,1,0
+path=618469549/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-appdb,Medium,Automatic mapping of service account,1,1,0
+path=955641471/api=/v1//ServiceAccount/argo-chaos,Medium,Automatic mapping of service account,1,1,0
+path=3460727074/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=3257953298/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2936402732/api=/v1/kubeeye-system/ServiceAccount/kubebench,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2161478986/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller/path=2901551493/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=2720350703/api=apps/v1/kube-system/Deployment/calico-kube-controllers,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=1596460488/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=905549350/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=2368596191/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=3003219297/api=apps/v1/spire/DaemonSet/spire-agent,Medium,Ingress and Egress blocked,1,1,0
+path=3003219297/api=apps/v1/spire/DaemonSet/spire-agent,High,HostNetwork access,1,1,0
+path=36581973/api=apps/v1/sock-shop/Deployment/catalogue-db,Medium,Ingress and Egress blocked,1,1,0
+path=1137787126/api=apps/v1//Deployment/argocd-image-updater,Medium,Ingress and Egress blocked,1,1,0
+path=56353231/api=apps/v1//Deployment/helloworld-v2,Medium,Ingress and Egress blocked,1,1,0
+path=809150200/api=apps/v1//Deployment/chaos-operator-ce,Medium,Ingress and Egress blocked,1,1,0
+path=2714391696/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+path=197017542/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+path=2306324272/api=apps/v1//Deployment/helloworld-v2,Medium,Ingress and Egress blocked,1,1,0
+path=1344166483/api=/v1/kadalu/ServiceAccount/kadalu-csi-provisioner,Medium,Automatic mapping of service account,1,1,0
+path=3098960991/api=/v1/kube-system/ServiceAccount/calico-kube-controllers,Medium,Automatic mapping of service account,1,1,0
+path=1057200841/api=/v1/monitoring/ServiceAccount/prometheus-k8s,Medium,Automatic mapping of service account,1,1,0
+path=1552564030/api=/v1/kube-system/ServiceAccount/secrets-store-csi-driver,Medium,Automatic mapping of service account,1,1,0
+path=4218211153/api=/v1/flux-system/ServiceAccount/credentials-sync-eventhub,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2769220058/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller/path=520872017/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=368651821/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=3480182429/api=apps/v1//Deployment/liveness-http,Medium,Ingress and Egress blocked,1,1,0
+path=52565238/api=apps/v1/litmus/Deployment/litmusportal-server,Medium,Ingress and Egress blocked,1,1,0
+path=52565238/api=apps/v1/litmus/Deployment/litmusportal-server,Medium,Automatic mapping of service account,1,1,0
+path=2355607007/api=apps/v1//DaemonSet/longhorn-nfs-installation,Medium,Ingress and Egress blocked,1,1,0
+path=2355607007/api=apps/v1//DaemonSet/longhorn-nfs-installation,High,HostNetwork access,1,1,0
+path=2683002282/api=apps/v1/echo-grpc/Deployment/echo-v2,Medium,Ingress and Egress blocked,1,1,0
+path=580769480/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=2904424939/api=apps/v1//StatefulSet/nacos,Medium,Ingress and Egress blocked,1,1,0
+path=1172838837/api=/v1/monitoring/ServiceAccount/pyrra-kubernetes,Medium,Automatic mapping of service account,1,1,0
+path=4179289738/api=/v1/kadalu/ServiceAccount/kadalu-server-sa,Medium,Automatic mapping of service account,1,1,0
+path=1857783659/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=1379691272/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=3882824949/api=apps/v1//Deployment/ratings-v2,Medium,Ingress and Egress blocked,1,1,0
+path=2130349526/api=/v1/monitoring/ServiceAccount/prometheus-k8s,Medium,Automatic mapping of service account,1,1,0
+path=3138247374/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-ops-manager,Medium,Automatic mapping of service account,1,1,0
+path=510404475/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=2774274857/api=apps/v1//Deployment/litmusportal-server,Medium,Ingress and Egress blocked,1,1,0
+path=3824456816/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1303550424/api=/v1/kubeeye-system/ServiceAccount/kubescape,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=1596460488/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=2769220058/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=1025153613/api=apps/v1//Deployment/httpbin,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2901551493/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=726365914/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=919274807/api=apps/v1//Deployment/reviews-v1,Medium,Ingress and Egress blocked,1,1,0
+path=125608594/api=apps/v1/monitoring/Deployment/prometheus-deployment,Medium,Ingress and Egress blocked,1,1,0
+path=3834591071/api=apps/v1//Deployment/fortio-deploy,Medium,Ingress and Egress blocked,1,1,0
+path=1660115524/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=3956758553/api=apps/v1/monitoring/Deployment/mysql-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=149389133/api=apps/v1/longhorn-system/Deployment/longhorn-ui,Medium,Ingress and Egress blocked,1,1,0
+path=334049183/api=apps/v1/default/DaemonSet/kubeshark-worker-daemon-set,Medium,Automatic mapping of service account,1,1,0
+path=334049183/api=apps/v1/default/DaemonSet/kubeshark-worker-daemon-set,High,HostNetwork access,1,1,0
+path=2330883704/api=apps/v1//Deployment/productpage-v1,Medium,Ingress and Egress blocked,1,1,0
+path=800758857/api=/v1/default/ServiceAccount/dubbo-admin,Medium,Automatic mapping of service account,1,1,0
+path=2049361887/api=apps/v1/default/Deployment/longhorn-test-minio,Medium,Ingress and Egress blocked,1,1,0
+path=2314136451/api=/v1/shifu-crd-system/ServiceAccount/shifu-crd-controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=4207712649/api=apps/v1/version-checker/Deployment/version-checker,Medium,Ingress and Egress blocked,1,1,0
+path=623598515/api=apps/v1//Deployment/liveness,Medium,Ingress and Egress blocked,1,1,0
+path=1129360782/api=/v1/spire/ServiceAccount/spire-server,Medium,Automatic mapping of service account,1,1,0
+path=3132344389/api=batch/v1/longhorn-system/Job/longhorn-uninstall,Medium,Ingress and Egress blocked,1,1,0
+path=3871898338/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2778504024/api=apps/v1/infra/Deployment/test-receiver,Medium,Ingress and Egress blocked,1,1,0
+path=1819151354/api=apps/v1//Deployment/grafana-operator-controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1711532008/api=apps/v1//Deployment/db,Medium,Ingress and Egress blocked,1,1,0
+path=405399087/api=apps/v1/kube-system/DaemonSet/csi-secrets-store,Medium,Ingress and Egress blocked,1,1,0
+path=3461283179/api=/v1/monitoring/ServiceAccount/prometheus-adapter,Medium,Automatic mapping of service account,1,1,0
+path=2031479538/api=apps/v1//Deployment/argo-rollouts,Medium,Ingress and Egress blocked,1,1,0
+path=1106640042/api=/v1//ServiceAccount/event-tracker-sa,Medium,Automatic mapping of service account,1,1,0
+path=2429974899/api=/v1/kadalu/ServiceAccount/kadalu-operator,Medium,Automatic mapping of service account,1,1,0
+path=3806970578/api=apps/v1//Deployment/helloworld-v2,Medium,Ingress and Egress blocked,1,1,0
+path=2902847494/api=apps/v1/kubeeye-system/Deployment/kubebench,Medium,Ingress and Egress blocked,1,1,0
+path=326700280/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1427099187/api=apps/v1/kong/StatefulSet/postgres,Medium,Ingress and Egress blocked,1,1,0
+path=527054985/api=apps/v1//DaemonSet/longhorn-spdk-setup,Medium,Ingress and Egress blocked,1,1,0
+path=527054985/api=apps/v1//DaemonSet/longhorn-spdk-setup,High,HostNetwork access,1,1,0
+path=669123636/api=apps/v1//Deployment/frontend,Medium,Ingress and Egress blocked,1,1,0
+path=1437838876/api=apps/v1/litmus/Deployment/chaos-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=4153407163/api=/v1/kubeeye-system/ServiceAccount/kubescape,Medium,Automatic mapping of service account,1,1,0
+path=2494083754/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1135931183/api=apps/v1/monitoring/Deployment/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=1450516353/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2859921788/api=apps/v1/sock-shop/Deployment/catalogue,Medium,Ingress and Egress blocked,1,1,0
+path=3546541277/api=apps/v1/monitoring/Deployment/prometheus-blackbox-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=3790192959/api=apps/v1//Deployment/helloworld-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1859421695/api=/v1/istio-system/ServiceAccount/prometheus,Medium,Automatic mapping of service account,1,1,0
+path=434714897/api=apps/v1/default/Deployment/kubeshark-front,Medium,Automatic mapping of service account,1,1,0
+path=3119910360/api=apps/v1/kuma-system/StatefulSet/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=889107170/api=/v1/secure/ServiceAccount/reconciler,Medium,Automatic mapping of service account,1,1,0
+path=1740876121/api=apps/v1//Deployment/tcp-echo,Medium,Ingress and Egress blocked,1,1,0
+path=2921844343/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1963197142/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1833184840/api=apps/v1/default/Deployment/reloader-reloader,Medium,Ingress and Egress blocked,1,1,0
+path=1833184840/api=apps/v1/default/Deployment/reloader-reloader,Medium,Automatic mapping of service account,1,1,0
+path=1300642120/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=3537640526/api=apps/v1//Deployment/nginx-demo-app,Medium,Ingress and Egress blocked,1,1,0
+path=78729049/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3745848954/api=apps/v1/monitoring/Deployment/pyrra-api,Medium,Ingress and Egress blocked,1,1,0
+path=756316131/api=apps/v1//Deployment/reviews-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1172268176/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1673439229/api=apps/v1/shifu-service/Deployment/telemetryservice,Medium,Ingress and Egress blocked,1,1,0
+path=860988868/api=apps/v1/monitoring-system/Deployment/vm-operator,Medium,Ingress and Egress blocked,1,1,0
+path=2865426626/api=apps/v1/default/Deployment/longhorn-test-azblob,Medium,Ingress and Egress blocked,1,1,0
+path=4052463955/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-database-pods,Medium,Automatic mapping of service account,1,1,0
+path=3758435537/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=265879406/api=apps/v1//Deployment/tcp-echo-v1,Medium,Ingress and Egress blocked,1,1,0
+path=4128858304/api=apps/v1/kadalu/DaemonSet/kadalu-csi-nodeplugin,Medium,Ingress and Egress blocked,1,1,0
+path=289374486/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=2549797567/api=/v1/central-namespace/ServiceAccount/test-service-account,Medium,Automatic mapping of service account,1,1,0
+path=3919741214/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=3919741214/api=apps/v1/system/Deployment/controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=2850992961/api=/v1/monitoring/ServiceAccount/pyrra-api,Medium,Automatic mapping of service account,1,1,0
+path=1160984002/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=4254072877/api=apps/v1/kubeeye-system/Deployment/kubescape,Medium,Ingress and Egress blocked,1,1,0
+path=4069241574/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-appdb,Medium,Automatic mapping of service account,1,1,0
+path=1555468444/api=/v1/kadalu/ServiceAccount/kadalu-operator,Medium,Automatic mapping of service account,1,1,0
+path=3667727570/api=/v1/monitoring/ServiceAccount/node-exporter,Medium,Automatic mapping of service account,1,1,0
+path=3762646449/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1962410670/api=apps/v1/monitoring/Deployment/mysql-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=1721521390/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+path=1125891088/api=apps/v1/default/Deployment/reloader-reloader,Medium,Ingress and Egress blocked,1,1,0
+path=1125891088/api=apps/v1/default/Deployment/reloader-reloader,Medium,Automatic mapping of service account,1,1,0
+path=825927819/api=apps/v1//Deployment/chaos-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=1428054578/api=/v1/kadalu/ServiceAccount/kadalu-csi-nodeplugin,Medium,Automatic mapping of service account,1,1,0
+path=3374811386/api=apps/v1//Deployment/details-v2,Medium,Ingress and Egress blocked,1,1,0
+path=4258070731/api=apps/v1//Deployment/argo-rollouts-dashboard,Medium,Ingress and Egress blocked,1,1,0
+path=879536185/api=apps/v1/webapp/Deployment/frontend,Medium,Ingress and Egress blocked,1,1,0
+path=2551429691/api=apps/v1//Deployment/tcp-echo,Medium,Ingress and Egress blocked,1,1,0
+path=4038337910/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=4038337910/api=apps/v1/system/Deployment/controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=3877741242/api=/v1/deviceshifu/ServiceAccount/edgedevice-sa,Medium,Automatic mapping of service account,1,1,0
+path=1883517697/api=/v1/default/ServiceAccount/reloader-reloader,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=520872017/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=905549350/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=885719569/api=apps/v1//Deployment/reviews-v3,Medium,Ingress and Egress blocked,1,1,0
+path=1701523052/api=apps/v1/monitoring/Deployment/prometheus-adapter,Medium,Ingress and Egress blocked,1,1,0
+path=1122025754/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=4187907739/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-appdb,Medium,Automatic mapping of service account,1,1,0
+path=132611514/api=apps/v1/longhorn-system/Deployment/longhorn-driver-deployer,Medium,Ingress and Egress blocked,1,1,0
+path=2666224663/api=apps/v1/echo-grpc/Deployment/echo-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1763557260/api=apps/v1//Deployment/jaeger-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3719614779/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=460952047/api=apps/v1/sock-shop/Deployment/carts-db,Medium,Ingress and Egress blocked,1,1,0
+path=101686776/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=4009630832/api=/v1/member-namespace/ServiceAccount/test-service-account,Medium,Automatic mapping of service account,1,1,0
+path=1628077576/api=/v1/argocd/ServiceAccount/argocd-redis-ha,Medium,Automatic mapping of service account,1,1,0
+path=2288838357/api=apps/v1/kubeeye-system/Deployment/kubeeye-controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2637913039/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2901551493/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=905549350/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=493626856/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1927737181/api=apps/v1/sock-shop/Deployment/payment,Medium,Ingress and Egress blocked,1,1,0
+path=1731795672/api=apps/v1//Deployment/chaos-operator-ce,Medium,Ingress and Egress blocked,1,1,0
+/secure/ServiceAccount/reconciler/path=2561304601/api=rbac.authorization.k8s.io/v1/webapp/Role/reconciler/path=855551932/api=rbac.authorization.k8s.io/v1/secure/RoleBinding/reconciler,Medium,Administrative Roles,1,1,0
+path=1697625452/api=apps/v1/monitoring/Deployment/prometheus-blackbox-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=1450659005/api=apps/v1//Deployment/sleep,Medium,Ingress and Egress blocked,1,1,0
+path=913432190/api=apps/v1/kube-system/DaemonSet/csi-secrets-store,Medium,Ingress and Egress blocked,1,1,0
+path=1697514459/api=apps/v1//Deployment/argocd-image-updater,Medium,Ingress and Egress blocked,1,1,0
+path=584914311/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-ops-manager,Medium,Automatic mapping of service account,1,1,0
+path=4174157411/api=/v1/version-checker/ServiceAccount/version-checker,Medium,Automatic mapping of service account,1,1,0
+/webapp/ServiceAccount/reconciler/path=2510971744/api=rbac.authorization.k8s.io/v1/webapp/RoleBinding/reconciler/path=905884789/api=rbac.authorization.k8s.io/v1/secure/Role/reconciler,Medium,Administrative Roles,1,1,0
+path=4221462977/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-ops-manager,Medium,Automatic mapping of service account,1,1,0
+path=1611534120/api=apps/v1/openshift-monitoring/Deployment/pyrra-kubernetes,Medium,Ingress and Egress blocked,1,1,0
+path=3082817076/api=/v1/monitoring/ServiceAccount/prometheus,Medium,Automatic mapping of service account,1,1,0
+path=1697903907/api=/v1/shifu-service/ServiceAccount/telemetry-service-sa,Medium,Automatic mapping of service account,1,1,0
+path=2251324692/api=/v1/flux-system/ServiceAccount/credentials-sync-eventhub,Medium,Automatic mapping of service account,1,1,0
+path=3005824021/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+path=3034114531/api=apps/v1//DaemonSet/longhorn-nvme-cli-installation,Medium,Ingress and Egress blocked,1,1,0
+path=3034114531/api=apps/v1//DaemonSet/longhorn-nvme-cli-installation,High,HostNetwork access,1,1,0
+path=1455564043/api=apps/v1//Deployment/redis,Medium,Ingress and Egress blocked,1,1,0
+path=1748091098/api=apps/v1//Deployment/cache,Medium,Ingress and Egress blocked,1,1,0
+path=2575107273/api=batch/v1/kong/Job/kong-migrations,Medium,Ingress and Egress blocked,1,1,0
+path=1971218505/api=/v1/kong/ServiceAccount/kong-serviceaccount,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=1596460488/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=726365914/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=1228926501/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=2519495060/api=/v1//ServiceAccount/argo,Medium,Automatic mapping of service account,1,1,0
+path=1648972966/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=534581454/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-operator,Medium,Automatic mapping of service account,1,1,0
+path=623001233/api=apps/v1/kube-system/DaemonSet/calico-node,Medium,Ingress and Egress blocked,1,1,0
+path=623001233/api=apps/v1/kube-system/DaemonSet/calico-node,High,HostNetwork access,1,1,0
+path=528341481/api=apps/v1/kuma-system/StatefulSet/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=545038163/api=/v1/monitoring/ServiceAccount/kube-state-metrics,Medium,Automatic mapping of service account,1,1,0
+path=4153129669/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-operator,Medium,Automatic mapping of service account,1,1,0
+path=3257950643/api=apps/v1/system/Deployment/controller-manager-v5,Medium,Ingress and Egress blocked,1,1,0
+path=3257950643/api=apps/v1/system/Deployment/controller-manager-v5,Medium,Automatic mapping of service account,1,1,0
+/monitoring/ServiceAccount/prometheus-k8s/path=3396943578/api=rbac.authorization.k8s.io/v1//ClusterRole/prometheus-k8s/path=4072369026/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/prometheus-k8s,Medium,Administrative Roles,1,1,0
+path=244384848/api=apps/v1/shifu-crd-system/Deployment/shifu-crd-controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=4095401643/api=/v1/kadalu/ServiceAccount/kadalu-operator,Medium,Automatic mapping of service account,1,1,0
+path=3804742530/api=apps/v1/sock-shop/Deployment/user,Medium,Ingress and Egress blocked,1,1,0
+path=4138806800/api=apps/v1//Deployment/backend,Medium,Ingress and Egress blocked,1,1,0
+path=2554024944/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=3611675144/api=apps/v1/kubeeye-system/Deployment/kubehunter,Medium,Ingress and Egress blocked,1,1,0
+path=2512183099/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1373648012/api=apps/v1//Deployment/argocd-repo-server,Medium,Ingress and Egress blocked,1,1,0
+path=2682430657/api=apps/v1//Deployment/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=2785929156/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2504249075/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=726365914/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=3048854420/api=apps/v1//StatefulSet/nacos,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2769220058/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller/path=2901551493/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=1927357645/api=apps/v1/metallb-system/Deployment/controller,Medium,Ingress and Egress blocked,1,1,0
+path=174041734/api=apps/v1//StatefulSet/loki,Medium,Ingress and Egress blocked,1,1,0
+path=150558040/api=apps/v1//Deployment/tornado,Medium,Ingress and Egress blocked,1,1,0
+path=3458740679/api=apps/v1/default/StatefulSet/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=3458740679/api=apps/v1/default/StatefulSet/grafana,Medium,Automatic mapping of service account,1,1,0
+path=972419090/api=/v1//ServiceAccount/litmus-admin,Medium,Automatic mapping of service account,1,1,0
+path=1560562434/api=apps/v1/litmus/Deployment/litmusportal-frontend,Medium,Ingress and Egress blocked,1,1,0
+path=1160362786/api=apps/v1//Deployment/productpage-v1,Medium,Ingress and Egress blocked,1,1,0
+path=862827187/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=862827187/api=apps/v1/monitoring/DaemonSet/node-exporter,High,HostNetwork access,1,1,0
+path=862827187/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Container hostPort,1,1,0
+path=785824304/api=/v1/kubeeye-system/ServiceAccount/kubebench,Medium,Automatic mapping of service account,1,1,0
+path=1141099501/api=/v1/metallb-system/ServiceAccount/speaker,Medium,Automatic mapping of service account,1,1,0
+path=4110296546/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-database-pods,Medium,Automatic mapping of service account,1,1,0
+path=3155024993/api=/v1/member-namespace/ServiceAccount/test-service-account,Medium,Automatic mapping of service account,1,1,0
+path=2105123707/api=/v1/kube-system/ServiceAccount/secrets-store-csi-driver,Medium,Automatic mapping of service account,1,1,0
+path=1572246063/api=/v1/kadalu/ServiceAccount/kadalu-csi-nodeplugin,Medium,Automatic mapping of service account,1,1,0
+path=2702487394/api=/v1/litmus/ServiceAccount/chaos-exporter,Medium,Automatic mapping of service account,1,1,0
+path=14376281/api=/v1//ServiceAccount/litmus-admin,Medium,Automatic mapping of service account,1,1,0
+path=2217832279/api=apps/v1//Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1323506733/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2558356613/api=apps/v1//DaemonSet/longhorn-cifs-installation,Medium,Ingress and Egress blocked,1,1,0
+path=2558356613/api=apps/v1//DaemonSet/longhorn-cifs-installation,High,HostNetwork access,1,1,0
+path=1327388864/api=/v1/kadalu/ServiceAccount/kadalu-server-sa,Medium,Automatic mapping of service account,1,1,0
+path=2449630313/api=apps/v1/litmus/Deployment/litmusportal-dex-server,Medium,Ingress and Egress blocked,1,1,0
+path=2449630313/api=apps/v1/litmus/Deployment/litmusportal-dex-server,Medium,Automatic mapping of service account,1,1,0
+path=1049438294/api=apps/v1/monitoring/Deployment/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=1832237180/api=apps/v1//Deployment/event-tracker,Medium,Ingress and Egress blocked,1,1,0
+path=636494244/api=apps/v1/default/Deployment/influxdb,Medium,Ingress and Egress blocked,1,1,0
+path=321154237/api=apps/v1/litmus/Deployment/litmusportal-frontend,Medium,Ingress and Egress blocked,1,1,0
+path=263282858/api=apps/v1//Deployment/reviews-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3254021216/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=3650265737/api=apps/v1/flux-system/Deployment/credentials-sync-eventhub,Medium,Ingress and Egress blocked,1,1,0
+path=1060150889/api=apps/v1/kadalu/DaemonSet/kadalu-csi-nodeplugin,Medium,Ingress and Egress blocked,1,1,0
+path=1394212345/api=/v1/shifu-service/ServiceAccount/telemetry-service-sa,Medium,Automatic mapping of service account,1,1,0
+path=3864737450/api=apps/v1/kube-system/DaemonSet/node-problem-detector,Medium,Ingress and Egress blocked,1,1,0
+path=1772667069/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+path=4212485188/api=apps/v1/openshift-monitoring/Deployment/pyrra-api,Medium,Ingress and Egress blocked,1,1,0
+path=3256139235/api=/v1/system/ServiceAccount/controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=1949462418/api=apps/v1//Deployment/vote,Medium,Ingress and Egress blocked,1,1,0
+path=536100390/api=apps/v1/mongodb/Deployment/mongodb-enterprise-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3013090760/api=apps/v1/litmus/Deployment/chaos-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=3006337714/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=830918469/api=apps/v1/sock-shop/Deployment/orders-db,Medium,Ingress and Egress blocked,1,1,0
+path=2019084531/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=3299077264/api=apps/v1/kadalu/Deployment/operator,Medium,Ingress and Egress blocked,1,1,0
+path=2273199358/api=/v1//ServiceAccount/argo,Medium,Automatic mapping of service account,1,1,0
+path=4026408451/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-ops-manager,Medium,Automatic mapping of service account,1,1,0
+path=1070580253/api=apps/v1//Deployment/argocd-repo-server,Medium,Ingress and Egress blocked,1,1,0
+path=3166609277/api=apps/v1//StatefulSet/zookeeper,Medium,Ingress and Egress blocked,1,1,0
+path=1043773886/api=apps/v1/default/Deployment/longhorn-test-cifs,Medium,Ingress and Egress blocked,1,1,0
+path=2160295787/api=apps/v1//Deployment/tcp-echo,Medium,Ingress and Egress blocked,1,1,0
+path=2065281225/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1062529724/api=apps/v1/kuma-system/StatefulSet/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2059638303/api=apps/v1//Deployment/argo-rollouts-dashboard,Medium,Ingress and Egress blocked,1,1,0
+path=194667862/api=apps/v1/monitoring/Deployment/pyrra-kubernetes,Medium,Ingress and Egress blocked,1,1,0
+path=1538690825/api=/v1/kadalu/ServiceAccount/kadalu-server-sa,Medium,Automatic mapping of service account,1,1,0
+path=3943168068/api=/v1//ServiceAccount/litmus-cluster-scope,Medium,Automatic mapping of service account,1,1,0
+path=759818900/api=/v1/monitoring/ServiceAccount/kube-state-metrics,Medium,Automatic mapping of service account,1,1,0
+path=1849014799/api=apps/v1//Deployment/subscriber,Medium,Ingress and Egress blocked,1,1,0
+/monitoring/ServiceAccount/prometheus-k8s/path=1458563070/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/prometheus-k8s/path=3396943578/api=rbac.authorization.k8s.io/v1//ClusterRole/prometheus-k8s,Medium,Administrative Roles,1,1,0
+path=2273690144/api=apps/v1//Deployment/sleep,Medium,Ingress and Egress blocked,1,1,0
+path=1759939687/api=/v1/longhorn-system/ServiceAccount/longhorn-ui-service-account,Medium,Automatic mapping of service account,1,1,0
+path=4196067357/api=/v1/kadalu/ServiceAccount/kadalu-csi-provisioner,Medium,Automatic mapping of service account,1,1,0
+path=1275877865/api=/v1/kubeeye-system/ServiceAccount/kubeeye-controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=4059227465/api=/v1/kube-system/ServiceAccount/seldon-spartakus-volunteer,Medium,Automatic mapping of service account,1,1,0
+path=280060477/api=apps/v1//Deployment/reviews-v2,Medium,Ingress and Egress blocked,1,1,0
+path=595144883/api=/v1/monitoring/ServiceAccount/prometheus,Medium,Automatic mapping of service account,1,1,0
+path=3611950785/api=apps/v1//Deployment/productpage-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1697359155/api=apps/v1/sock-shop/Deployment/user-db,Medium,Ingress and Egress blocked,1,1,0
+path=4264710366/api=/v1/secure/ServiceAccount/secure,Medium,Automatic mapping of service account,1,1,0
+path=31153900/api=/v1//ServiceAccount/argo-chaos,Medium,Automatic mapping of service account,1,1,0
+path=2161157914/api=apps/v1/flux-system/Deployment/credentials-sync-eventhub,Medium,Ingress and Egress blocked,1,1,0
+path=2740719619/api=apps/v1//Deployment/litmusportal-auth-server,Medium,Ingress and Egress blocked,1,1,0
+path=3780029592/api=apps/v1/kadalu/Deployment/operator,Medium,Ingress and Egress blocked,1,1,0
+path=4273277891/api=apps/v1/istio-system/Deployment/kiali,Medium,Ingress and Egress blocked,1,1,0
+path=3329520173/api=apps/v1//Deployment/jaeger-operator,Medium,Ingress and Egress blocked,1,1,0
+path=2051644346/api=apps/v1/sock-shop/Deployment/front-end,Medium,Ingress and Egress blocked,1,1,0
+path=3744973926/api=apps/v1/sock-shop/Deployment/carts,Medium,Ingress and Egress blocked,1,1,0
+path=1775533600/api=apps/v1/istio-system/Deployment/prometheus,Medium,Ingress and Egress blocked,1,1,0
+path=1290795513/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=645103806/api=/v1/central-namespace/ServiceAccount/test-service-account,Medium,Automatic mapping of service account,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=1596460488/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=2161478986/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=710617971/api=apps/v1/webapp/Deployment/backend,Medium,Ingress and Egress blocked,1,1,0
+path=378588295/api=/v1/default/ServiceAccount/reloader-reloader,Medium,Automatic mapping of service account,1,1,0
+path=3066322054/api=apps/v1//Deployment/nfs-client-provisioner,Medium,Ingress and Egress blocked,1,1,0
+path=1643809721/api=apps/v1//Deployment/tcp-echo,Medium,Ingress and Egress blocked,1,1,0
+path=708792035/api=/v1/default/ServiceAccount/grafana,Medium,Automatic mapping of service account,1,1,0
+path=2982561179/api=apps/v1/flux-system/Deployment/credentials-sync-eventhub,Medium,Ingress and Egress blocked,1,1,0
+path=2293487597/api=apps/v1/secure/Deployment/frontend,Medium,Ingress and Egress blocked,1,1,0
+path=2293487597/api=apps/v1/secure/Deployment/frontend,Medium,Container hostPort,1,1,0
+path=4053686787/api=apps/v1/mongodb/Deployment/mongodb-enterprise-operator-multi-cluster,Medium,Ingress and Egress blocked,1,1,0
+path=872314589/api=apps/v1/spire/Deployment/spire-server,Medium,Ingress and Egress blocked,1,1,0
+path=3132516229/api=/v1/kube-system/ServiceAccount/calico-cni-plugin,Medium,Automatic mapping of service account,1,1,0
+path=3864458727/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=3282625348/api=/v1/chaos-ns/ServiceAccount/chaos-admin,Medium,Automatic mapping of service account,1,1,0
+path=112531547/api=/v1/istio-system/ServiceAccount/kiali,Medium,Automatic mapping of service account,1,1,0
+path=1355469131/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+path=1143585167/api=apps/v1//Deployment/reviews-v3,Medium,Ingress and Egress blocked,1,1,0
+path=1563079798/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=255723170/api=apps/v1/istio-system/Deployment/grafana,Medium,Ingress and Egress blocked,1,1,0
+path=255723170/api=apps/v1/istio-system/Deployment/grafana,Medium,Automatic mapping of service account,1,1,0
+path=1974624122/api=/v1/kanister/ServiceAccount/kanister-operator,Medium,Automatic mapping of service account,1,1,0
+path=1480955543/api=/v1/monitoring/ServiceAccount/node-exporter,Medium,Automatic mapping of service account,1,1,0
+path=700227019/api=apps/v1//Deployment/ratings-v2-mysql,Medium,Ingress and Egress blocked,1,1,0
+path=1910580026/api=apps/v1/metallb-system/DaemonSet/speaker,Medium,Ingress and Egress blocked,1,1,0
+path=1910580026/api=apps/v1/metallb-system/DaemonSet/speaker,High,HostNetwork access,1,1,0
+path=568136692/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-database-pods,Medium,Automatic mapping of service account,1,1,0
+path=2284332167/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=4078624024/api=/v1/kadalu/ServiceAccount/kadalu-csi-nodeplugin,Medium,Automatic mapping of service account,1,1,0
+path=395567991/api=apps/v1//Deployment/httpbin,Medium,Ingress and Egress blocked,1,1,0
+path=1627672910/api=/v1/litmus/ServiceAccount/litmus-server-account,Medium,Automatic mapping of service account,1,1,0
+path=71406402/api=apps/v1/monitoring/Deployment/prometheus-deployment,Medium,Ingress and Egress blocked,1,1,0
+path=3019691387/api=/v1/default/Pod/ray-client-tls,Medium,Ingress and Egress blocked,1,1,0
+path=414191242/api=apps/v1//Deployment/workflow-controller,Medium,Ingress and Egress blocked,1,1,0
+path=4044126072/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=4044126072/api=apps/v1/monitoring/DaemonSet/node-exporter,High,HostNetwork access,1,1,0
+path=4044126072/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Container hostPort,1,1,0
+path=2545184780/api=/v1/system/ServiceAccount/controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=478349526/api=apps/v1//Deployment/jaeger-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3849977692/api=apps/v1//Deployment/ratelimit,Medium,Ingress and Egress blocked,1,1,0
+path=1217738639/api=apps/v1/monitoring/Deployment/kube-state-metrics,Medium,Ingress and Egress blocked,1,1,0
+path=413541288/api=/v1/default/ServiceAccount/nacos-operator,Medium,Automatic mapping of service account,1,1,0
+path=2891931081/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1445698157/api=apps/v1//StatefulSet/nacos,Medium,Ingress and Egress blocked,1,1,0
+path=2870881291/api=/v1/kube-system/ServiceAccount/secrets-store-csi-driver,Medium,Automatic mapping of service account,1,1,0
+path=2382104869/api=/v1/monitoring/ServiceAccount/pyrra-kubernetes,Medium,Automatic mapping of service account,1,1,0
+path=663187754/api=apps/v1//Deployment/reviews-v3,Medium,Ingress and Egress blocked,1,1,0
+path=218355075/api=apps/v1/mongodb/Deployment/mongodb-enterprise-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3046865609/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=2356657129/api=apps/v1//Deployment/helloworld-v1,Medium,Ingress and Egress blocked,1,1,0
+path=1062397170/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=216186677/api=batch/v1/litmus/Job/upgrade-agent,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=520872017/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=726365914/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=119822809/api=/v1/litmus/ServiceAccount/litmus-server-account,Medium,Automatic mapping of service account,1,1,0
+path=1305559725/api=/v1/system/ServiceAccount/manager,Medium,Automatic mapping of service account,1,1,0
+path=3848391655/api=apps/v1//DaemonSet/longhorn-iscsi-installation,Medium,Ingress and Egress blocked,1,1,0
+path=3848391655/api=apps/v1//DaemonSet/longhorn-iscsi-installation,High,HostNetwork access,1,1,0
+path=3714702239/api=/v1/openshift-monitoring/ServiceAccount/pyrra-kubernetes,Medium,Automatic mapping of service account,1,1,0
+path=258812633/api=apps/v1/kadalu/Deployment/operator,Medium,Ingress and Egress blocked,1,1,0
+path=19010000/api=apps/v1/litmus/Deployment/litmusportal-auth-server,Medium,Ingress and Egress blocked,1,1,0
+path=1744916955/api=apps/v1//Deployment/notsleep,Medium,Ingress and Egress blocked,1,1,0
+path=1865680097/api=/v1/deviceshifu/ServiceAccount/edgedevice-sa,Medium,Automatic mapping of service account,1,1,0
+path=1404216138/api=apps/v1/kubeeye-system/Deployment/kubescape,Medium,Ingress and Egress blocked,1,1,0
+path=2452467566/api=apps/v1/monitoring/Deployment/prometheus-operator,Medium,Ingress and Egress blocked,1,1,0
+path=2452467566/api=apps/v1/monitoring/Deployment/prometheus-operator,Medium,Automatic mapping of service account,1,1,0
+path=3253253525/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=2530640613/api=/v1/kadalu/ServiceAccount/kadalu-csi-provisioner,Medium,Automatic mapping of service account,1,1,0
+path=4171130120/api=/v1/mongodb/ServiceAccount/mongodb-enterprise-database-pods,Medium,Automatic mapping of service account,1,1,0
+path=115041995/api=/v1//ServiceAccount/event-tracker-sa,Medium,Automatic mapping of service account,1,1,0
+path=351803101/api=apps/v1//StatefulSet/argocd-application-controller,Medium,Ingress and Egress blocked,1,1,0
+path=2206058065/api=/v1/monitoring/ServiceAccount/node-exporter,Medium,Automatic mapping of service account,1,1,0
+path=1521913206/api=/v1/kadalu/ServiceAccount/kadalu-csi-provisioner,Medium,Automatic mapping of service account,1,1,0
+path=2832956797/api=apps/v1//Deployment/jaeger-operator,Medium,Ingress and Egress blocked,1,1,0
+path=1589769151/api=apps/v1/kuma-system/StatefulSet/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=4127074165/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-appdb,Medium,Automatic mapping of service account,1,1,0
+path=4057511932/api=apps/v1//Deployment/ext-authz,Medium,Ingress and Egress blocked,1,1,0
+path=3951776652/api=/v1//Pod/sample-app-pod,Medium,Ingress and Egress blocked,1,1,0
+path=924092321/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2161478986/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller/path=2504249075/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=3566658826/api=apps/v1//Deployment/subscriber,Medium,Ingress and Egress blocked,1,1,0
+path=2316035159/api=apps/v1/sock-shop/Deployment/queue-master,Medium,Ingress and Egress blocked,1,1,0
+path=1626454731/api=apps/v1/monitoring-system/Deployment/vm-operator,Medium,Ingress and Egress blocked,1,1,0
+path=2074271917/api=apps/v1//Deployment/argocd-server,Medium,Ingress and Egress blocked,1,1,0
+path=3787585542/api=/v1//Pod/ray-pod,Medium,Ingress and Egress blocked,1,1,0
+path=1820361546/api=apps/v1/monitoring/Deployment/pyrra-api,Medium,Ingress and Egress blocked,1,1,0
+path=3121469755/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-database-pods,Medium,Automatic mapping of service account,1,1,0
+path=4181502970/api=apps/v1//StatefulSet/nacos,Medium,Ingress and Egress blocked,1,1,0
+path=3790864514/api=apps/v1//Deployment/argocd-server,Medium,Ingress and Egress blocked,1,1,0
+path=238945551/api=/v1/istio-system/ServiceAccount/grafana,Medium,Automatic mapping of service account,1,1,0
+path=4195054845/api=/v1/flux-system/ServiceAccount/credentials-sync,Medium,Automatic mapping of service account,1,1,0
+path=3676370024/api=/v1/monitoring/ServiceAccount/mysql-exporter,Medium,Automatic mapping of service account,1,1,0
+path=4114413333/api=apps/v1/istio-system/Deployment/zipkin,Medium,Ingress and Egress blocked,1,1,0
+path=954368390/api=apps/v1//Deployment/sleep,Medium,Ingress and Egress blocked,1,1,0
+path=317271564/api=apps/v1/default/Deployment/kubeshark-hub,Medium,Automatic mapping of service account,1,1,0
+path=2467771582/api=apps/v1//Deployment/argo-rollouts,Medium,Ingress and Egress blocked,1,1,0
+path=1418042926/api=apps/v1//Deployment/ambassador,Medium,Ingress and Egress blocked,1,1,0
+path=810057511/api=apps/v1/monitoring/Deployment/prometheus-adapter,Medium,Ingress and Egress blocked,1,1,0
+path=3269991016/api=/v1/monitoring-system/ServiceAccount/vm-operator,Medium,Automatic mapping of service account,1,1,0
+path=886490018/api=apps/v1/kubeeye-system/Deployment/kubebench,Medium,Ingress and Egress blocked,1,1,0
+path=4245801878/api=apps/v1//Deployment/redis,Medium,Ingress and Egress blocked,1,1,0
+path=1953015555/api=apps/v1//Deployment/result,Medium,Ingress and Egress blocked,1,1,0
+path=2513862994/api=/v1/kadalu/ServiceAccount/kadalu-server-sa,Medium,Automatic mapping of service account,1,1,0
+path=1394800312/api=apps/v1//Deployment/httpbin,Medium,Ingress and Egress blocked,1,1,0
+path=550196353/api=apps/v1//Deployment/mysqldb-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3854696018/api=apps/v1//Deployment/redis,Medium,Ingress and Egress blocked,1,1,0
+path=3009308618/api=apps/v1//Deployment/litmusportal-frontend,Medium,Ingress and Egress blocked,1,1,0
+path=2927249201/api=/v1/monitoring/ServiceAccount/pyrra-api,Medium,Automatic mapping of service account,1,1,0
+path=2420554118/api=apps/v1/monitoring/Deployment/pyrra-kubernetes,Medium,Ingress and Egress blocked,1,1,0
+path=2709269033/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=92733565/api=apps/v1/argocd/StatefulSet/argocd-redis-ha-server,Medium,Ingress and Egress blocked,1,1,0
+path=4038726809/api=/v1/default/ServiceAccount/kubeshark-service-account,Medium,Automatic mapping of service account,1,1,0
+path=3318458737/api=apps/v1/sock-shop/Deployment/user-load,Medium,Ingress and Egress blocked,1,1,0
+path=2530510884/api=/v1/system/ServiceAccount/controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=3583436445/api=apps/v1//Deployment/event-tracker,Medium,Ingress and Egress blocked,1,1,0
+path=705543671/api=apps/v1/monitoring-system/Deployment/vm-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3639622947/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=931777493/api=/v1/default/ServiceAccount/grafana-operator-controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=2561874455/api=apps/v1/flux-system/Deployment/credentials-sync,Medium,Ingress and Egress blocked,1,1,0
+path=2183208121/api=apps/v1//Deployment/pgo,Medium,Ingress and Egress blocked,1,1,0
+path=2732416488/api=apps/v1//Deployment/jwt-server,Medium,Ingress and Egress blocked,1,1,0
+path=2733560597/api=apps/v1//Deployment/nginx-deployment,Medium,Ingress and Egress blocked,1,1,0
+path=3895737943/api=apps/v1//Deployment/kuberay-apiserver,Medium,Ingress and Egress blocked,1,1,0
+path=3712340858/api=/v1/kubeeye-system/ServiceAccount/kubehunter,Medium,Automatic mapping of service account,1,1,0
+path=3118313562/api=apps/v1/kubeeye-system/Deployment/kubehunter,Medium,Ingress and Egress blocked,1,1,0
+path=3887220135/api=apps/v1/kadalu/DaemonSet/kadalu-csi-nodeplugin,Medium,Ingress and Egress blocked,1,1,0
+path=1873958408/api=apps/v1/kanister/Deployment/kanister-operator,Medium,Ingress and Egress blocked,1,1,0
+path=3104692136/api=/v1/member-namespace/ServiceAccount/mongodb-enterprise-appdb,Medium,Automatic mapping of service account,1,1,0
+path=2827132057/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+/webapp/ServiceAccount/reconciler/path=2510971744/api=rbac.authorization.k8s.io/v1/webapp/RoleBinding/reconciler/path=2561304601/api=rbac.authorization.k8s.io/v1/webapp/Role/reconciler,Medium,Administrative Roles,1,1,0
+path=643002637/api=apps/v1/system/Deployment/kuberay-operator,Medium,Ingress and Egress blocked,1,1,0
+path=643002637/api=apps/v1/system/Deployment/kuberay-operator,Medium,Automatic mapping of service account,1,1,0
+path=711859739/api=apps/v1/kube-system/DaemonSet/csi-secrets-store-windows,Medium,Ingress and Egress blocked,1,1,0
+path=821824500/api=apps/v1/istio-system/Deployment/skywalking-oap,Medium,Ingress and Egress blocked,1,1,0
+path=1568143385/api=apps/v1//StatefulSet/argocd-application-controller,Medium,Ingress and Egress blocked,1,1,0
+path=739538512/api=apps/v1//Deployment/reviews-v2,Medium,Ingress and Egress blocked,1,1,0
+path=2974385292/api=apps/v1/sock-shop/Deployment/orders,Medium,Ingress and Egress blocked,1,1,0
+path=4061978738/api=/v1/webapp/ServiceAccount/webapp,Medium,Automatic mapping of service account,1,1,0
+path=2410195659/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+path=872157357/api=apps/v1/istio-system/Deployment/skywalking-ui,Medium,Ingress and Egress blocked,1,1,0
+path=2795259007/api=apps/v1/kadalu/DaemonSet/kadalu-csi-nodeplugin,Medium,Ingress and Egress blocked,1,1,0
+path=2774675873/api=apps/v1/sock-shop/Deployment/rabbitmq,Medium,Ingress and Egress blocked,1,1,0
+path=4142537827/api=/v1/openshift-monitoring/ServiceAccount/pyrra-api,Medium,Automatic mapping of service account,1,1,0
+path=1884943014/api=batch/v1/kong/Job/kong-migrations,Medium,Ingress and Egress blocked,1,1,0
+path=1295608397/api=/v1/monitoring/ServiceAccount/prometheus-operator,Medium,Automatic mapping of service account,1,1,0
+path=2697238284/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=3182560892/api=apps/v1//Deployment/dubbo-admin,Medium,Ingress and Egress blocked,1,1,0
+path=1978243855/api=apps/v1/secure/Deployment/backend,Medium,Ingress and Egress blocked,1,1,0
+path=1018944505/api=apps/v1//Deployment/ratings-v2-mysql-vm,Medium,Ingress and Egress blocked,1,1,0
+path=902497188/api=apps/v1//Deployment/reviews-v2,Medium,Ingress and Egress blocked,1,1,0
+path=940869940/api=apps/v1//Deployment/ratings-v1,Medium,Ingress and Egress blocked,1,1,0
+path=889435216/api=/v1/metallb-system/ServiceAccount/controller,Medium,Automatic mapping of service account,1,1,0
+path=1292267625/api=apps/v1/litmus/Deployment/litmusportal-server,Medium,Ingress and Egress blocked,1,1,0
+path=1292267625/api=apps/v1/litmus/Deployment/litmusportal-server,Medium,Automatic mapping of service account,1,1,0
+path=2309529945/api=apps/v1//Deployment/reviews-v1,Medium,Ingress and Egress blocked,1,1,0
+path=4231516382/api=apps/v1//Deployment/details-v1,Medium,Ingress and Egress blocked,1,1,0
+path=3883532930/api=apps/v1//Deployment/redis,Medium,Ingress and Egress blocked,1,1,0
+path=3163126129/api=apps/v1//Deployment/argo-rollouts,Medium,Ingress and Egress blocked,1,1,0
+path=3561617928/api=apps/v1//Deployment/reviews-v3,Medium,Ingress and Egress blocked,1,1,0
+path=646410135/api=apps/v1//Deployment/productpage-v1,Medium,Ingress and Egress blocked,1,1,0
+path=951676568/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=3440468122/api=apps/v1/kube-system/DaemonSet/csi-secrets-store-windows,Medium,Ingress and Egress blocked,1,1,0
+path=2977413832/api=/v1/monitoring/ServiceAccount/alertmanager-main,Medium,Automatic mapping of service account,1,1,0
+path=762440689/api=apps/v1//Deployment/argo-rollouts,Medium,Ingress and Egress blocked,1,1,0
+path=1432515124/api=/v1//Pod/tie-breaker-pod,Medium,Ingress and Egress blocked,1,1,0
+path=1333051382/api=apps/v1/default/Deployment/longhorn-test-nfs,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2504249075/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller/path=2769220058/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=4102672436/api=apps/v1//Deployment/nginx,Medium,Ingress and Egress blocked,1,1,0
+/argocd/ServiceAccount/argocd-application-controller/path=2161478986/api=rbac.authorization.k8s.io/v1//ClusterRoleBinding/argocd-application-controller/path=520872017/api=rbac.authorization.k8s.io/v1//ClusterRole/argocd-application-controller,Medium,Administrative Roles,1,1,0
+path=1321588418/api=apps/v1//Deployment/workflow-controller,Medium,Ingress and Egress blocked,1,1,0
+/secure/ServiceAccount/reconciler/path=855551932/api=rbac.authorization.k8s.io/v1/secure/RoleBinding/reconciler/path=905884789/api=rbac.authorization.k8s.io/v1/secure/Role/reconciler,Medium,Administrative Roles,1,1,0
+path=1396468891/api=apps/v1/kong/Deployment/proxy-kong,Medium,Ingress and Egress blocked,1,1,0
+path=1767248253/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=1008632204/api=apps/v1/kong/Deployment/ingress-kong,Medium,Ingress and Egress blocked,1,1,0
+path=2310201193/api=/v1/shifu-crd-system/ServiceAccount/shifu-crd-controller-manager,Medium,Automatic mapping of service account,1,1,0
+path=1743162068/api=/v1/longhorn-system/ServiceAccount/longhorn-service-account,Medium,Automatic mapping of service account,1,1,0
+path=2163144698/api=apps/v1/longhorn-system/DaemonSet/longhorn-manager,Medium,Ingress and Egress blocked,1,1,0
+path=3782828062/api=apps/v1/system/Deployment/kuberay-operator,Medium,Ingress and Egress blocked,1,1,0
+path=1748573291/api=apps/v1//Deployment/chaos-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=18059553/api=apps/v1//Deployment/reviews-v2,Medium,Ingress and Egress blocked,1,1,0
+path=190066274/api=apps/v1//Deployment/httpbin,Medium,Ingress and Egress blocked,1,1,0
+path=2739518821/api=apps/v1/infra/Deployment/test-receiver,Medium,Ingress and Egress blocked,1,1,0
+path=3700058996/api=apps/v1/system/Deployment/controller-manager,Medium,Ingress and Egress blocked,1,1,0
+path=985166813/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Ingress and Egress blocked,1,1,0
+path=985166813/api=apps/v1/monitoring/DaemonSet/node-exporter,High,HostNetwork access,1,1,0
+path=985166813/api=apps/v1/monitoring/DaemonSet/node-exporter,Medium,Container hostPort,1,1,0
+path=3454183378/api=apps/v1/monitoring/Deployment/kube-state-metrics,Medium,Ingress and Egress blocked,1,1,0
+path=315615310/api=apps/v1/kadalu/Deployment/operator,Medium,Ingress and Egress blocked,1,1,0
+path=1273237947/api=apps/v1//Deployment/redis,Medium,Ingress and Egress blocked,1,1,0
+path=1709606830/api=/v1/longhorn-system/ServiceAccount/longhorn-support-bundle,Medium,Automatic mapping of service account,1,1,0
+path=3319690507/api=/v1/chaos-ns/ServiceAccount/argowf-svcacc,Medium,Automatic mapping of service account,1,1,0
