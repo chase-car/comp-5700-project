@@ -134,7 +134,7 @@ def extract_kdes(text, prompt, prompt_type, doc_name):
     seen_names = set()
     element_count = 0
     for i, chunk in enumerate(relevant_lines):
-        if element_count >= 3:
+        if element_count >= 5:
             break
         element_key = f"element{i+1}"
 

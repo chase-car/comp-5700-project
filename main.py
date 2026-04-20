@@ -44,6 +44,8 @@ def run_pipeline(doc1_path, doc2_path):
 
     prompt_types = [
         ("zero-shot", construct_zero_shot_prompt),
+        ("few-shot", construct_few_shot_prompt),
+        ("chain-of-thought", construct_chain_of_thought_prompt),
     ]
 
     llm_name = "google/gemma-3-1b-it"

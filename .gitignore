@@ -6,6 +6,5 @@ outputs/*.yaml
 __pycache__/
 *.pyc
 build/
-dist/
 *.spec
 comp5700-venv/

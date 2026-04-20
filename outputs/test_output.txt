@@ -54,3 +54,17 @@ test output
 
 ==================================================
 
+*LLM Name*
+gemma-3-1b-it
+
+*Prompt Used*
+test prompt
+
+*Prompt Type*
+zero-shot
+
+*LLM Output*
+test output
+
+==================================================
+

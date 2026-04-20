@@ -1,32 +1,38 @@
 element1:
   name: Ensure that local logging has been enabled on all systems and networking
   requirements:
-    req1: System and networking devices must be enabled to log.
-    req10: Data should be encrypted.
-    req11: Data must be stored securely.
-    req12: Network devices must be secured.
-    req13: Network traffic must be monitored.
-    req14: Network segments must be isolated.
-    req15: Regularly scan for vulnerabilities.
-    req16: Vulnerabilities must be addressed promptly.
-    req2: All systems and networking devices are enabled.
-    req3: Users must be authenticated.
-    req4: Credentials must be secure.
-    req5: Authentication mechanisms must be reliable.
-    req6: Users must have appropriate authorization.
-    req7: Access rights are limited.
-    req8: Authorization checks must be performed.
-    req9: Sensitive data must be protected.
+    req1: Local logging enabled on all systems
+    req2: Local logging enabled on all networking devices
 element2:
   name: Ensure that if the kubelet refers to a configuration file with the --config
     argument, that
   requirements:
-    req1: Permissions must be 644 or more restrictive.
-    req2: Validate the file permissions against 644 or more restrictive.
-    req3: 644 or more restrictive permissions.
-    req4: Validate the file permissions.
+    req1: 644 or more restrictive
+    req2: (None)
+    req3: Restrict file permissions (644 or more restrictive)
+    req4: Check if kubelet references the configuration file with --config argument
+    req5: Ensure that configuration file has permissions of 644 or more restrictive
+    req6: Ensure that kubelet can access the configuration file
+    req7: Error handling for invalid permissions (644 or more restrictive)
+    req8: Prevent kubelet from accessing configuration files not specified in the
+      default file
 element3:
   name: Ensure that only network ports, protocols, and services listening on a system
   requirements:
-    req1: Validated business needs are specified for each system.
-    req2: Only network ports, protocols, and services listening on a system are running.
+    req1: Validated business needs must be defined and documented.
+    req10: Service security monitoring is required.
+    req11: Service vulnerabilities are identified and addressed.
+    req12: Service-level security policies are defined.
+    req13: Data security requirements must be defined
+    req14: Data encryption is required.
+    req15: Data loss prevention measures are implemented.
+    req16: System configuration must be validated.
+    req17: System
+    req2: System ports and protocols must be checked against a defined list of authorized
+    req3: System security audit conducted to ensure compliance with business requirements.
+    req4: User authentication must be implemented.
+    req5: User authorization must be implemented.
+    req6: Access control policy must be defined and implemented.
+    req7: Network security should be analyzed
+    req8: Network security assessments are conducted.
+    req9: Network protocols must be monitored.
