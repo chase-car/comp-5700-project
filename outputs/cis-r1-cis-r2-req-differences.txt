@@ -1,37 +1,56 @@
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,audit logs
-Ensure that local logging has been enabled on all systems and networking,all network devices
-Ensure that local logging has been enabled on all systems and networking,All systems
-Ensure that local logging has been enabled on all systems and networking,Network devices should be secured
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Across all Kubernetes components
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,consistent with the enterprise’s audit log management process
-Ensure that local logging has been enabled on all systems and networking,All network devices
-Ensure that local logging has been enabled on all systems and networking,on all network devices
-Ensure that local logging has been enabled on all systems and networking,Network devices have been configured
-Ensure that local logging has been enabled on all systems and networking,Reporting can be automated
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Audit log management
-Ensure that local logging has been enabled on all systems and networking,Alerting mechanisms have been
-Ensure that only network ports, protocols, and services listening on a system,Run only valid network ports, protocols, and services.
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,across all Kubernetes components
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Kubernetes components
-Ensure that local logging has been enabled on all systems and networking,security measures have been implemented
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Enterprise’s audit log management process
-Ensure that only network ports, protocols, and services listening on a system,Verify network ports and protocols.
-Ensure that if the kubelet refers to a configuration file with the --config argument, that,File permissions are checked to ensure they comply with the configuration file's permissions.
-Ensure that local logging has been enabled on all systems and networking,data storage has been completed
-Ensure that local logging has been enabled on all systems and networking,Security measures have been implemented
-Ensure that local logging has been enabled on all systems and networking,Data security needs to be implemented
-Ensure that local logging has been enabled on all systems and networking,Incident response is required
-Ensure that only network ports, protocols, and services listening on a system,Validate business needs.
-Ensure that local logging has been enabled on all systems and networking,On all systems
-Ensure that if the kubelet refers to a configuration file with the --config argument, that,(None)
-Ensure that local logging has been enabled on all systems and networking,all systems
-Ensure that local logging has been enabled on all systems and networking,all security measures have been implemented
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Collect and manage audit logs in accordance with the enterprise's audit log management process
-Ensure that local logging has been enabled on all systems and networking,Data storage has been completed
-Ensure that local logging has been enabled on all systems and networking,reporting is automated
-Ensure that local logging has been enabled on all systems and networking,Monitoring and auditing are required
-Ensure that local logging has been enabled on all systems and networking,Remote access is restricted
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Collect and manage
-Ensure that local logging has been enabled on all systems and networking,All systems should be protected
-Ensure that local logging has been enabled on all systems and networking,Network devices are to be configured
-Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that audit logs are collected and managed in accordance with the enterprise’s audit log management process.
+Ensure that only network ports, protocols, and services listening on a system,Validate business needs
+Ensure that local logging has been enabled on all systems and networking,Protect data integrity
+Ensure that only network ports, protocols, and services listening on a system,Establish a baseline security policy
+Ensure that local logging has been enabled on all systems and networking,Verify the configuration of all systems
+Ensure that only network ports, protocols, and services listening on a system,Validate the legitimacy of the listening network ports, protocols, and services
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,Check file permissions of the kubelet config file.
+Ensure that local logging has been enabled on all systems and networking,Monitor data for suspicious activity
+Ensure that local logging has been enabled on all systems and networking,Security requirement: Local logging must be enabled on all systems and networking devices.
+Ensure that local logging has been enabled on all systems and networking,Establish security incident response plan
+Ensure that only network ports, protocols, and services listening on a system,Implement robust security controls
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Verify the integrity of the Kubernetes API
+Ensure that local logging has been enabled on all systems and networking,Confirm data access controls
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,Define the correct file permissions for the kubelet configuration file.
+Ensure that local logging has been enabled on all systems and networking,Protect data availability
+Ensure that local logging has been enabled on all systems and networking,Ensure local logging is enabled on all networking devices
+Ensure that local logging has been enabled on all systems and networking,Enable local logging on all systems
+Ensure that local logging has been enabled on all systems and networking,Security requirement: Local logging is enabled on all systems.
+Ensure that only network ports, protocols, and services listening on a system,Verify the legitimacy
+Ensure that local logging has been enabled on all systems and networking,Confirm all systems are protected
+Ensure that local logging has been enabled on all systems and networking,Implement a security incident response plan
+Ensure that local logging has been enabled on all systems and networking,Ensure all system configurations are updated
+Ensure that local logging has been enabled on all systems and networking,Local logging has been enabled on all networking devices.
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that audit logs are collected and managed in accordance with the enterprise’s audit log management process across all Kubernetes components.
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Validate the API's response format.
+Ensure that local logging has been enabled on all systems and networking,Verify data access controls
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should not allow the user to submit a request with a name longer than 50 characters.
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should handle 400 Bad Request errors for invalid request bodies.
+Ensure that only network ports, protocols, and services listening on a system,Assess the business requirement against the validation results
+Ensure that only network ports, protocols, and services listening on a system,Check the system's ability to execute the given requirements
+Ensure that only network ports, protocols, and services listening on a system,Ensure only network ports, protocols, and services listening on a system
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Collect audit logs in accordance with the enterprise’s audit log management process.
+Ensure that local logging has been enabled on all systems and networking,Local logging has been enabled on all systems.
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that the Kubernetes API has the required access controls defined in the system's configuration
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should validate the "age" field.
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that the Kubernetes API has the required access controls defined in the system's configuration.
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should validate the "city" field.
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should validate the "name" field.
+Ensure that only network ports, protocols, and services listening on a system,Identify and mitigate vulnerabilities
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,Handle 400 Bad Request errors
+Ensure that only network ports, protocols, and services listening on a system,Verify the validation of network ports, protocols, and services
+Ensure that audit logs are collected and managed in accordance with the enterprise’s,Ensure that the API is accessible and operational.
+Ensure that only network ports, protocols, and services listening on a system,Ensure the system only listens to network ports, protocols, and services
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,Return a 200
+Ensure that local logging has been enabled on all systems and networking,Local logging should be enabled on all systems and networking devices.
+Ensure that only network ports, protocols, and services listening on a system,Check the system's integrity
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should return a 200 OK response for valid request bodies.
+Ensure that only network ports, protocols, and services listening on a system,The system must be designed to satisfy the business needs
+Ensure that local logging has been enabled on all systems and networking,Implement data encryption
+Ensure that local logging has been enabled on all systems and networking,Conduct regular security audits
+Ensure that if the kubelet refers to a configuration file with the --config argument, that,The application should not allow the user to submit a request with an age less than 0.
+Ensure that only network ports, protocols, and services listening on a system,Verify the validity of the system's functionality
+Ensure that local logging has been enabled on all systems and networking,Verify the configuration of all networking devices
+Ensure that only network ports, protocols, and services listening on a system,Assess the impact of a breach
+Ensure that only network ports, protocols, and services listening on a system,Assess the business requirement against the validation results.
+Ensure that only network ports, protocols, and services listening on a system,Define the business requirements
+Ensure that local logging has been enabled on all systems and networking,Establish a security incident response plan

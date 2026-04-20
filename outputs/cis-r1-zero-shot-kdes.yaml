@@ -2,29 +2,57 @@ element1:
   name: Ensure that local logging has been enabled on all systems and networking
   requirements:
     req1: Enable local logging on all systems
-    req10: all security measures have been implemented
-    req11: Reporting can be automated
-    req12: reporting is automated
-    req13: Data storage has been completed
-    req14: data storage has been completed
-    req15: Alerting mechanisms have been
-    req2: On all systems
-    req3: all systems
-    req4: Network devices are to be configured
-    req5: Network devices have been configured
-    req6: all network devices
-    req7: on all network devices
-    req8: Security measures have been implemented
-    req9: security measures have been implemented
+    req10: Confirm all systems are protected
+    req11: Monitor data for suspicious activity
+    req12: Implement a security incident response plan
+    req13: Protect data integrity
+    req14: Protect data availability
+    req15: Implement data encryption
+    req16: Verify data access controls
+    req17: Confirm data access controls
+    req2: Ensure local logging is enabled on all networking devices
+    req3: Local logging should be enabled on all systems and networking devices.
+    req4: Ensure all system configurations are updated
+    req5: Verify the configuration of all networking devices
+    req6: Verify the configuration of all systems
+    req7: Establish a security incident response plan
+    req8: Conduct regular security audits
+    req9: Establish security incident response plan
 element2:
   name: Ensure that if the kubelet refers to a configuration file with the --config
     argument, that
   requirements:
     req1: 644 or more restrictive
-    req2: (None)
+    req10: Handle 400 Bad Request errors
+    req11: Return a 200
+    req2: Define the correct file permissions for the kubelet configuration file.
+    req3: The application should handle 400 Bad Request errors for invalid request
+      bodies.
+    req4: The application should return a 200 OK response for valid request bodies.
+    req5: The application should validate the "name" field.
+    req6: The application should validate the "age" field.
+    req7: The application should validate the "city" field.
+    req8: The application should not allow the user to submit a request with a name
+      longer than 50 characters.
+    req9: The application should not allow the user to submit a request with an age
+      less than 0.
 element3:
   name: Ensure that only network ports, protocols, and services listening on a system
   requirements:
-    req1: Verify network ports and protocols.
-    req2: Validate business needs.
-    req3: Run only valid network ports, protocols, and services.
+    req1: Verify the validation of network ports, protocols, and services
+    req10: Implement robust security controls
+    req11: Check the system's ability to execute the given requirements
+    req12: Verify the validity of the system's functionality
+    req13: Check the system's integrity
+    req14: The system must be designed to satisfy the business needs
+    req15: Define the business requirements
+    req16: Assess the business requirement against the validation results
+    req17: Verify the legitimacy
+    req2: Validate business needs
+    req3: Ensure only network ports, protocols, and services listening on a system
+    req4: Validate the legitimacy of the listening network ports, protocols, and services
+    req5: Assess the business requirement against the validation results.
+    req6: Ensure the system only listens to network ports, protocols, and services
+    req7: Identify and mitigate vulnerabilities
+    req8: Establish a baseline security policy
+    req9: Assess the impact of a breach
