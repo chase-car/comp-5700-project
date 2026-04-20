@@ -1,0 +1,11 @@
+outputs/project-yamls/
+outputs/kubescape-results.json
+outputs/*.txt
+outputs/*.csv
+outputs/*.yaml
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+comp5700-venv/
