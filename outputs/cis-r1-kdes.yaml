@@ -1,125 +1,32 @@
 element1:
   name: Ensure that local logging has been enabled on all systems and networking
   requirements:
-    req1: Enable local logging on all systems
-    req10: Monitor communication channels for suspicious activity
-    req11: Implement network segmentation
-    req12: Use a secure protocol for all communication channels
-    req13: Restrict access to communication channels to authorized
-    req2: Enable local logging on all networking devices
-    req3: Implement strong authentication protocols for all communication channels
-    req4: Encrypt all communications using industry-standard encryption
-    req5: Audit all communication channels
-    req6: Implement logging of all communication channels
-    req7: Restrict access to communication channels to authorized personnel
-    req8: Protect against man-in-the-middle attacks
-    req9: Ensure confidentiality of data in transit and at rest
-element10:
-  name: Ensure that these namespaces are the ones you need and are adequately administered
-  requirements:
-    req1: Ensure that the namespaces are the ones you need and are adequately administered
-    req10: Manage resources
-    req11: Allocate resources
-    req12: Monitor resource utilization
-    req13: Ensure that these namespaces are the ones you need and are adequately administered
-    req14: Check the documentation for security requirements
-    req15: Identify any security vulnerabilities
-    req16: Create namespaces
-    req2: Follow the documentation and create namespaces for objects in your deployment
-      as
-    req3: Verify the namespaces
-    req4: Check the status of the namespaces
-    req5: Identify any namespaces that need remediation
-    req6: Create namespaces for objects in your deployment as
-    req7: Define the deployment configuration
-    req8: Ensure that the deployment configuration meets the requirements
-    req9: Verify the deployment configuration
+    req1: System and networking devices must be enabled to log.
+    req10: Data should be encrypted.
+    req11: Data must be stored securely.
+    req12: Network devices must be secured.
+    req13: Network traffic must be monitored.
+    req14: Network segments must be isolated.
+    req15: Regularly scan for vulnerabilities.
+    req16: Vulnerabilities must be addressed promptly.
+    req2: All systems and networking devices are enabled.
+    req3: Users must be authenticated.
+    req4: Credentials must be secure.
+    req5: Authentication mechanisms must be reliable.
+    req6: Users must have appropriate authorization.
+    req7: Access rights are limited.
+    req8: Authorization checks must be performed.
+    req9: Sensitive data must be protected.
 element2:
   name: Ensure that if the kubelet refers to a configuration file with the --config
     argument, that
   requirements:
-    req1: File permissions must be 644 or more restrictive
-    req2: The kubelet reads configuration files with the --config argument.
+    req1: Permissions must be 644 or more restrictive.
+    req2: Validate the file permissions against 644 or more restrictive.
+    req3: 644 or more restrictive permissions.
+    req4: Validate the file permissions.
 element3:
   name: Ensure that only network ports, protocols, and services listening on a system
   requirements:
-    req1: Validate network port and protocol
-    req10: Audit data access events
-    req11: Ensure that all data access requests are authenticated.
-    req12: Ensure that all data access
-    req2: Validate business needs
-    req3: Only running network ports, protocols, and services listening on a system.
-    req4: Only running network ports, protocols, and services listening on a system
-    req5: Ensure that all data access requests are authenticated
-    req6: Verify that only authorized users are granted access
-    req7: Implement data encryption
-    req8: Protect data against unauthorized access
-    req9: Limit the access to authorized users
-element4:
-  name: Ensure that /etc/systemd/system/kubelet.service.d/10-kubelet-args.conf does
-    not
-  requirements:
-    req1: Prevent setting --make-iptables-util-chains in kubelet configuration file.
-    req10: Prevent setting --make-iptables
-    req2: Define a specific file to override the existing configuration.
-    req3: Implement a fallback mechanism for kubelet to avoid conflicts.
-    req4: Enable IPTablesUtilChains functionality.
-    req5: Verify that IPTablesUtilChains is being set.
-    req6: Implement a mechanism to handle iptables chain usage in the kubelet configuration.
-    req7: Test the configuration changes thoroughly.
-    req8: Configure IPTablesUtilChains with a setting that avoids conflicts.
-    req9: Provide a mechanism for managing iptables chain usage.
-element5:
-  name: Ensure that all users with administrative account access use a dedicated or
-  requirements:
-    req1: Users with administrative account access must use a dedicated account for
-      elevated activities.
-    req10: System logs should be reviewed regularly.
-    req11: Security audits should be conducted periodically.
-    req12: Access to administrative accounts should be logged.
-    req13: The system must be configured to prevent unauthorized access to administrative
-      accounts.
-    req14: The configuration should be stored securely.
-    req15: All administrative activities should
-    req2: The dedicated account should only be used for administrative activities.
-    req3: The dedicated account should not be used for internet browsing, email, or
-      similar activities.
-    req4: The system must provide administrative access to users.
-    req5: The system must maintain a secure and restricted account system.
-    req6: The system should not be vulnerable to attacks.
-    req7: Users with administrative account access should be designated to use a dedicated
-      account
-    req8: This account should only be used for administrative activities.
-    req9: The system needs to monitor the usage of administrative accounts.
-element6:
-  name: Avoiding mounting these tokens removes this attack avenue.
-  requirements:
-    req1: Compromise single pods
-    req2: Mount pods without service account tokens
-    req3: Unauthenticated principals will be able to communicate with API server
-    req4: If the resource is available to unauthenticated principals.
-element7:
-  name: Ensure that allowedCapabilities is not present in PSPs for the cluster unless
-    it is set
-  requirements:
-    req1: The allowedCapabilities policy should not be present in PSPs for the cluster
-      unless it is set to an empty array.
-    req2: By default, PodSecurityPolicies are not defined.
-    req3: PodSecurityPolicies are not defined.
-    req4: 'Default Value: By default, PodSecurityPolicies are not defined.'
-    req5: PSPs are not defined.
-    req6: Allow the cluster to be parsed without a PodSecurityPolicy.
-    req7: Validate that PSPs are structured as an array.
-    req8: PSPs should be structured as an array.
-element8:
-  name: Ensure that each namespace defined in the cluster has at least one Network
-    Policy.
-  requirements:
-    req1: Ensure each namespace defined in the cluster has at least one Network Policy
-    req2: Create NetworkPolicy objects as you need them
-element9:
-  name: Minimize the use of environment variable secrets.
-  requirements:
-    req1: Use environment variables for secrets instead of mounting secrets as data
-      volumes.
-    req2: Prevent the use of environment variable secrets for logging.
+    req1: Validated business needs are specified for each system.
+    req2: Only network ports, protocols, and services listening on a system are running.
