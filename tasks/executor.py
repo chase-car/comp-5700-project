@@ -4,7 +4,7 @@ import subprocess
 
 def load_text_files(filepath1, filepath2):
     """
-    Takes two TEXT file paths as input, validates them, and returns their contents.
+    Takes two text file paths as input, validates them, and returns their contents
     """
     # Check if files exist
     if not os.path.exists(filepath1):
@@ -12,13 +12,13 @@ def load_text_files(filepath1, filepath2):
     if not os.path.exists(filepath2):
         raise FileNotFoundError(f"File not found: {filepath2}")
 
-    # Check if files are TEXT files
+    # Check if files are text files
     if not filepath1.endswith(".txt"):
         raise ValueError(f"File is not a TEXT file: {filepath1}")
     if not filepath2.endswith(".txt"):
         raise ValueError(f"File is not a TEXT file: {filepath2}")
 
-    # Load the TEXT files
+    # Load the text files
     with open(filepath1, "r") as f:
         text1 = f.read()
     with open(filepath2, "r") as f:
@@ -28,8 +28,8 @@ def load_text_files(filepath1, filepath2):
 
 def determine_controls(text1, text2, output_filename):
     """
-    Determines if there are differences in the TEXT files and maps them to Kubescape controls.
-    Saves the output to a TEXT file.
+    Determines if there are differences in the TEXT files and maps them to Kubescape controls,
+    saves the output to a text file.
     """
     # Check if there are any differences
     no_diff_messages = [
@@ -81,8 +81,8 @@ def determine_controls(text1, text2, output_filename):
 
 def execute_kubescape(controls_filepath, yamls_zip):
     """
-    Executes Kubescape tool based on the controls in the TEXT file.
-    Returns a pandas dataframe with the scan results.
+    Executes Kubescape tool based on the controls in the text file,
+    returns a pandas dataframe with the results
     """
     # Read the controls file
     with open(controls_filepath, "r") as f:
@@ -111,7 +111,7 @@ def execute_kubescape(controls_filepath, yamls_zip):
     print(f"Kubescape output: {result.stdout}")
     print(f"Kubescape errors: {result.stderr}")
 
-    # Parse results into dataframe
+    # Parse results
     import json
     try:
         with open("outputs/kubescape-results.json", "r") as f:
@@ -132,7 +132,6 @@ def execute_kubescape(controls_filepath, yamls_zip):
                         "Compliance score": 0
                     })
 
-        # Deduplicate
         df = pd.DataFrame(rows).drop_duplicates() if rows else pd.DataFrame(
             columns=["FilePath", "Severity", "Control name",
                      "Failed resources", "All Resources", "Compliance score"])
@@ -148,16 +147,16 @@ def generate_csv(df, output_filename):
     """
     Generates a CSV file from the kubescape scan results dataframe.
     """
-    # Ensure the dataframe has the correct columns
+    # Make sure the dataframe has the correct columns
     required_columns = ["FilePath", "Severity", "Control name", 
                         "Failed resources", "All Resources", "Compliance score"]
     
-    # Add any missing columns with empty values
+    # Add missing columns with empty values
     for col in required_columns:
         if col not in df.columns:
             df[col] = ""
 
-    # Keep only the required columns
+    # Keep only required columns
     df = df[required_columns]
 
     # Save to CSV

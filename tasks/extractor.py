@@ -29,10 +29,6 @@ def load_document(filepath):
     return full_text
 
 def construct_zero_shot_prompt(text):
-    """
-    Constructs a zero shot prompt to identify key data elements in a document.
-    Returns a string.
-    """
     prompt = f"""You are a security requirements analyst. Read the following security requirements document and identify the key data elements (KDEs).
 
 For each key data element, provide:
@@ -47,10 +43,6 @@ Identify all key data elements in the document above."""
     return prompt
 
 def construct_few_shot_prompt(text):
-    """
-    Constructs a few shot prompt to identify key data elements in a document.
-    Returns a string.
-    """
     prompt = f"""You are a security requirements analyst. Read the following security requirements document and identify the key data elements (KDEs).
 
 For each key data element, provide:
@@ -83,10 +75,6 @@ Identify all key data elements in the document above following the same format a
     return prompt
 
 def construct_chain_of_thought_prompt(text):
-    """
-    Constructs a chain of thought prompt to identify key data elements in a document.
-    Returns a string.
-    """
     prompt = f"""You are a security requirements analyst. Read the following security requirements document and identify the key data elements (KDEs).
 
 Let's think through this step by step:
@@ -109,15 +97,15 @@ Now let's work through this step by step to identify all key data elements in th
 
 def extract_kdes(text, prompt, prompt_type, doc_name):
     """
-    Uses Gemma-3-1B to extract key data elements from a document.
-    Saves the output to a YAML file and returns a nested dictionary.
+    Uses Gemma-3-1B to extract key data elements from a document,
+    saves the output to a YAML file and returns a dictionary.
     """
     model_name = "google/gemma-3-1b-it"
     
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float32)
 
-    # Extract only relevant chunks from the document
+    # Extract relevant chunks from the document
     relevant_lines = []
     lines = text.split("\n")
     for i, line in enumerate(lines):
@@ -154,7 +142,7 @@ name:"""
         outputs = model.generate(**inputs, max_new_tokens=256)
         response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-        # Parse name - use the chunk's first meaningful line
+        # Use chunk's first meaningful line
         name = ""
         for chunk_line in chunk.split("\n"):
             chunk_line = chunk_line.strip()
@@ -177,10 +165,10 @@ name:"""
             # Skip placeholders and empty lines
             if not line or "<" in line:
                 continue
-            # Remove req1:, req2: prefixes if present
+            # Remove req1:, req2: prefixes if needed
             if line.startswith("-"):
                 req_val = line.lstrip("- ").strip()
-                # Remove any reqN: prefix inside the value
+                # Remove any reqN: prefix inside value
                 if req_val.startswith("req") and ":" in req_val:
                     req_val = req_val.split(":", 1)[1].strip()
                 if req_val and req_val not in seen_reqs:
@@ -202,7 +190,7 @@ name:"""
 
 def save_llm_output(llm_name, prompt, prompt_type, llm_output, output_filename):
     """
-    Collects LLM output and saves it to a TEXT file in a formatted way.
+    Collects LLM output and saves it to a text file in a formatted way.
     """
     with open(f"outputs/{output_filename}", "a", encoding="utf-8") as f:
         f.write(f"*LLM Name*\n")

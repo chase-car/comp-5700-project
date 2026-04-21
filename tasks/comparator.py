@@ -25,8 +25,8 @@ def load_yaml_files(filepath1, filepath2):
 
 def compare_element_names(yaml1, yaml2, output_filename):
     """
-    Identifies differences in element names between two YAML files.
-    Saves the differences to a TEXT file.
+    Identifies differences in element names between two YAML files,
+    saves the differences to a text file
     """
     names1 = set()
     names2 = set()
@@ -54,8 +54,8 @@ def compare_element_names(yaml1, yaml2, output_filename):
 
 def compare_element_requirements(yaml1, yaml2, output_filename):
     """
-    Identifies differences in element requirements between two YAML files.
-    Saves the differences to a TEXT file as tuples (NAME, REQUIREMENT).
+    Identifies differences in element requirements between two YAML files,
+    saves the differences to a text file
     """
     reqs1 = set()
     reqs2 = set()

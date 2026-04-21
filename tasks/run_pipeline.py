@@ -33,7 +33,7 @@ prompt_types = [
 llm_name = "google/gemma-3-1b-it"
 
 for doc1_path, doc2_path in inputs:
-    # Get document names without extension
+    # Get doc names without extension
     doc1_name = os.path.basename(doc1_path).replace(".pdf", "")
     doc2_name = os.path.basename(doc2_path).replace(".pdf", "")
 
@@ -46,7 +46,7 @@ for doc1_path, doc2_path in inputs:
     for prompt_type, construct_prompt in prompt_types:
         print(f"  Using prompt type: {prompt_type}")
 
-        # Construct prompts
+        # Make prompts
         prompt1 = construct_prompt(text1)
         prompt2 = construct_prompt(text2)
 
